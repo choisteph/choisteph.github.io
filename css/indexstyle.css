@@ -15,6 +15,14 @@ h2{
     font-weight: 700;
 }
 
+/* all links */
+a{
+    color: black;
+}
+a:hover{
+    color: inherit;
+    font-weight: 700;
+}
 
 /* paragraph */
 p{
@@ -34,6 +42,11 @@ nav a {
 .nav-link:hover{
     text-decoration: underline;
     color: inherit;
+}
+
+/* proj links on index */
+.indlink{
+    text-decoration: underline;
 }
 
 /* image styling */
