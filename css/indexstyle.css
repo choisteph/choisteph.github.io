@@ -156,8 +156,8 @@ nav a {
 }
 
 /* hide p used to aria-describedby */
-.description{
-    visibility: hidden;
+.desc{
+    display: none !important;
 }
 
 @media only screen and (min-width: 768px){
