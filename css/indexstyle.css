@@ -110,6 +110,38 @@ nav a {
     height: 300px;
 }
 
+
+/* external links */
+.externallink{
+    color: black !important;
+    font-weight: 500;
+}
+
+.externallink:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* bio information spacing */
+.bioinfo{
+    padding: 55px 0px;
+}
+
+/* external links div */
+.externals{
+    padding-top: 15px;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* add style and hoverstyle to download btn */
+.dlbt{
+    background-color: #e8e8e8;
+}
+.dlbt:hover{
+    background-color: #DCDCDC;
+    font-weight: 700;
+}
+
 @media only screen and (min-width: 768px){
     .youtube{
         width: 550px;
