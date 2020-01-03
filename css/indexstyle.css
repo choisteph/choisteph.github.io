@@ -113,7 +113,7 @@ nav a {
 
 /* spacing rows on frontpage */
 .project{
-    padding: 15px 0px;
+    padding: 25px 0px;
 }
 
 
@@ -158,6 +158,11 @@ nav a {
 /* hide p used to aria-describedby */
 .desc{
     display: none !important;
+}
+
+/* icon divider on bio */
+.divider{
+    padding: 20px 0px;
 }
 
 @media only screen and (min-width: 768px){
