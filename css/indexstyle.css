@@ -15,6 +15,11 @@ h2{
     font-weight: 700;
 }
 
+h3{
+    font-size: 18pt;
+}
+
+
 /* all links */
 a{
     color: black;
@@ -163,6 +168,12 @@ nav a {
 /* icon divider on bio */
 .divider{
     padding: 20px 0px;
+}
+
+/* ARVR links */
+.arvrlink{
+    text-decoration: underline;
+    color: #00007F;
 }
 
 @media only screen and (min-width: 768px){
