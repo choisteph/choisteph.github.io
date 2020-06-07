@@ -18,6 +18,12 @@ h3{
     font-size: 18pt;
 }
 
+h5{
+    font-size: 12pt;
+    font-weight: 700;
+    font-style: italic;
+}
+
 
 /* all links */
 a{
