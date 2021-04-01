@@ -268,7 +268,18 @@ nav a {
     font-weight: 400;
     font-size: 14pt;
 }
+/* styling for covid.html */
+.webimage{
+    width: 80%;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
 
+/* style linkto, which links out to websites */
+.linkto{
+    color: #00007F;
+    text-decoration: underline;
+}
 @media only screen and (min-width: 768px){
     .youtube{
         width: 550px;
