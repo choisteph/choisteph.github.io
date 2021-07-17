@@ -6,11 +6,8 @@
     <title>stephanie's portfolio</title>
 
     <!-- bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <!-- favicon -->
     <link rel="icon" href="img/steph_logo.png">
 
@@ -18,13 +15,17 @@
     <link type="text/css" href="css/indexstyle.css" rel="stylesheet">
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
   </head>
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <h1 class="text-center">Stephanie Choi.</h1>
+      <p class="text-center">Front-End Developer and UI/UX Designer.</p>
+      <!-- <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav mr-auto ">
           <li class="nav-item">
             <a class="nav-link active" href="index.html">home</a>
@@ -33,228 +34,31 @@
             <a class="nav-link" href="#projectcollection">projects</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
-
-    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
     <main>
-      <div class="container" id="content" tabindex="-1">
-        <div class="row" id="biographical">
-          <div class="col-sm-12">
-            <div class="row">
-              <div class="col-sm-12 text-center aboutme">
-                <h1>about me</h1>
-              </div> <!--close aboutme-->
-            </div>
-          <div class="row bioinfo">
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center mymascot">
-                  <img class="mascot" src="img/st_char_cr.png" alt="stephanie's cartoon mascot" aria-describedby="stephmascot">
-                  <p class="desc" id="stephmascot">a smiling, female-presenting character with shoulder-length black hair, no bangs, and ovular glasses. she is wearing a textured white shirt with a red heart on the chest, and some blue jeans. her hands are at her hips.</p>
-                </div> <!-- close col 6 mascot-->
-                <div class="col-sm-12 col-md-12 col-lg-6">
-                  <p id="hithere">Hi there,</p>
-                  <p id="imstephanie">I'm Stephanie.</p>
-                  <p>she/her/hers + they/them/their</p>
-                  <div class="moreinfo">
-                    <p><b>M.S. in Human-Computer Interaction</p>
-                    <p>B.A. in English Language and Literature</b></p>
-                    <p>Minor in Japanese Language</p>
-                    <p>Korean Heritage</p>
-                  </div>
-                </div> <!--close col 6 hithere-->
-              </div> <!--close row -->
-              <div class="row">
-                <div class="col-sm-12 biostatement">
-                  <p>I am a UI/UX designer who is interested in design justice and accessibility, especially regarding cross-cultural intersectionality. My favorite part of the design process is creating designs for different experiences and understanding how users approach interface designs. I love simple and efficient designs and try to keep my design and documentation clear and concise. I am looking to grow as a designer that can serve users and their needs!
-                  </p>
-                </div> <!--closes col biostatement-->
-              </div>  <!--closes row for biostatemnt-->
-              <div class="row">
-                <div class="col-sm-12">
-                  <p>Feel free to send me an email at <a class="email" href="mailto:stchoi@umich.edu">stchoi@umich.edu</a></p>
-                </div> <!--closes col-->
-              </div> <!--closes row for mailto-->
-            </div> <!--closes col6 for bioinfo-->
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <div class="row">
-                <div class="col-sm-12 resumediv">
-                  <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf" name="resume"></iframe>
-                </div> <!--closes col-->
-              </div> <!--closes row for resume-->
-              <div class="row">
-                <div class="col-sm-12  d-flex align-items-end justify-content-end downloadbutton"> 
-                  <a class="btn dlbt" role="button" href="docs/stchoi_resume.pdf" target= _blank
-                  download="stchoi_resume" name="download" title="download my resume">
-                  Download
-                </a>
-                </div> <!--closes col-->
-              </div>  <!--closes row for download button-->
-            </div> <!--close col6 for resume and download-->
-          </div>  <!--closes row bioinfo-->
-          <div class="row externals text-center">
-            <div class="col-sm-6">
-              <a class="externallink" href="https://github.com/choisteph" target=_blank title="stephanie's github">github</a>
-            </div> <!--closes col-->
-            <div class="col-sm-6">
-              <a class="externallink" href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
-            </div> <!--closes col-->         
-          </div>  <!--closes row-->
-        </div> <!--closes col-->
-      </div>  <!--closes row externals-->
+      <div class="container-fluid text-center" id="content" tabindex="-1">
         <div class="row">
-          <div class="col-sm-12 text-center projectheading">
-            <h1>projects</h1>
+          <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+            <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf" name="resume"></iframe>
+            <a class="btn" role="button" href="docs/stchoi_resume.pdf" target= _blank
+            download="stchoi_resume" name="download" title="download my resume">
+            Download my Resume
+          </a>
           </div>
         </div>
-        <div class="row" id="projectcollection">
-          <!--
-          <div class="col-sm-12" id="personalprojects">
-            <h3>personal projects</h3>
-            <div class="row project">
-              <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                <div class="iconspacer">
-                  <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                </div>
-                <div class="projectdesc">
-                  <h2>chore score!</h2>
-                  <p>UX/UI development, prototyping</p>
-                  <a class="indlink" href="chorescore.html" title="chore score">project details &#8594;</a>
-                </div> 
-              </div> 
-            </div>
+        <div class="row">
+          <div class="col-12">
+            <h2>Connect with me:</h2>
+            <a href="href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
+            <a href="https://github.com/choisteph" target=_blank title="stephanie's github">github</a>
           </div>
-          -->
-          <div class="col-sm-12" id="workandcourseprojs">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3>work projects</h3>
-                <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>covidmapping.org</h2>
-                      <p>front-end development, UX design</p>
-                      <a class="indlink" href="covid.html" title="covid mapping">project details &#8594;</a>
-                    </div> <!--close projdesc-->
-                  </div> <!--close col-->
-                </div> <!--close row project-->
-                <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>sos dashboard</h2>
-                      <p>front-end development</p>
-                      <a class="indlink" href="sosdash.html" title="sos dashboard">project details &#8594;</a>
-                    </div> <!--close projdesc-->
-                  </div> <!--close col-->
-                </div> <!--close row project-->
-                
-                <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>transportation okn</h2>
-                      <p>user interface and interaction design</p>
-                      <a class="indlink" href="okn.html" title="transportation okn">project details &#8594;</a>
-                    </div> <!--close projdesc-->
-                  </div> <!--close col-->
-                </div> <!--close row project-->
-        
-                <!-- <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>hello japan</h2>
-                      <p>illustration and research</p>
-                      <a class="indlink" href="hellojapan.html" title="hello japan vn">project details &#8594;</a>
-                    </div> 
-                  </div> 
-                </div>
-                
-                <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>find me!</h2>
-                      <p>vector art</p>
-                      <a class="indlink" href="findme.html" title="find me mobile game">project details &#8594;</a>
-                    </div>
-                  </div>
-                 -->
-                 
-              </div> <!--closes col-->
-              <div class="col-sm-6">
-                <h3>course projects</h3>
-                <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>async</h2>
-                      <p>mobile development</p>
-                      <a class="indlink" href="async.html" title="async project">project details &#8594;</a>
-                    </div> <!--close projdesc-->
-                  </div> <!--close col-->
-                </div> <!--close row project-->
-  
-                <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>heuristic evaluation for autodesk</h2>
-                      <p>heuristic evaluation</p>
-                      <a class="indlink" href="heuristic.html" title="heuristics project">project details &#8594;</a>
-                    </div> <!--close projdesc-->
-                  </div> <!--close col-->
-                </div> <!--close row project-->
-  
-                <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>communication consultation for client A</h2>
-                      <p>contextual inquiry</p>
-                      <a class="indlink" href="contextual.html" title="contextual inquiry project">project details &#8594;</a>
-                    </div> <!--close projdesc-->
-                  </div> <!--close col-->
-                </div> <!--close row project-->
-  
-                <div class="row project">
-                  <div class="col-sm-12 d-flex justify-content-start align-items-center">
-                    <div class="iconspacer">
-                      <img class="icon" alt="stephanie icon" src="img/steph_logo.png">
-                    </div>
-                    <div class="projectdesc">
-                      <h2>ar/vr immersive theatre</h2>
-                      <p>ar/vr prototyping</p>
-                      <a class="indlink" href="arvr.html" title="arvr project">project details &#8594;</a>
-                    </div> <!--close projdesc-->
-                  </div> <!--close col-->
-                </div> <!--close row project-->
-  
-              </div> <!--closes col-->
-            </div> <!--close row-->
-          </div>
-          
-        </div>  <!--closes row projectcollection-->
+        </div>       
       </div> <!--closes main container-->
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
