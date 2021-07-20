@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>stephanie's portfolio</title>
+    <title>stephanie's portfolio | Home</title>
 
     <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -17,14 +17,15 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   </head>
   <body>
-
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
     <header>
       <h1 class="text-center">Stephanie Choi.</h1>
-      <p class="text-center">Front-End Developer and UI/UX Designer.</p>
+      <h2 class="text-center">Front-End Developer and UI/UX Designer.</h2>
+      <p class="text-center">she/they</p>
       <!-- <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav mr-auto ">
           <li class="nav-item">
@@ -36,25 +37,69 @@
         </ul>
       </nav> -->
     </header>
-    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
     <main>
       <div class="container-fluid text-center" id="content" tabindex="-1">
         <div class="row">
           <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-            <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf" name="resume"></iframe>
+            <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf#zoom=FitW" name="resume"></iframe>
             <a class="btn" role="button" href="docs/stchoi_resume.pdf" target= _blank
             download="stchoi_resume" name="download" title="download my resume">
             Download my Resume
           </a>
           </div>
         </div>
-        <div class="row">
+        <div class="row portfoSection">
           <div class="col-12">
-            <h2>Connect with me:</h2>
-            <a href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
-            <a href="https://github.com/choisteph" target=_blank title="stephanie's github">github</a>
+            <div class="row spaceit">
+              <div class="col-12">
+                <h3>Check out some of my projects:</h3>
+                <ul class="text-center linksList">
+                  <li>
+                    <a href="covid.html" title="covid mapping">covidmapping.org</a>
+                  </li>
+                  <li>
+                    <a href="okn.html" title="transportation okn">Transportation OKN</a>
+                  </li>
+                  <li>
+                    <a href="sosdash.html" title="sos dashboard">SOS Dashboard</a>
+                  </li>
+                </ul>
+              </div>
+            </div> <!--close row-->
+            <div class="row spaceit">
+              <div class="col-12">
+                <h4 class="smallerHeading">... and take a look at the calculators I made:</h4>
+                <ul class="text-center linksList">
+                  <li>
+                    <a href="https://levelofcomfort.onrender.com/" title="Level of Comfort Bike Compatibility Calculator" alt="link out to level of comfort" target="_blank">Level of Comfort - Bike Compatibility Index Calculator</a>
+                  </li>
+                  <li>
+                    <a href="https://aadtcalculator.onrender.com/" title="AADT Calculator" alt="link out to AADT Calculator" target="_blank">Annual Average Daily Traffic Calculator</a>
+                  </li>
+                  <li>
+                    The <a href="https://www.mistartmap.info/" title="MI Start Map" alt="link out to MI Start Map" target="_blank">MI Start Map Risk Level Calculator</a> (click the link in the alert at the top of the page!)
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>       
+        </div> 
+        <div class="row portfoSection">
+          <div class="col-12">
+            <h3>Connect with me:</h3>
+            <ul class="text-center linksList">
+              <li>
+                <a href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
+              </li>
+              <li>
+                <a href="https://github.com/choisteph" target=_blank title="stephanie's github">github</a>
+              </li>
+              <li>
+                <a href="mailto:stchoi@umich.edu" title="send something to stephanie's email">email</a>
+              </li>
+            </ul>
+          </div>
+        </div>      
       </div> <!--closes main container-->
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

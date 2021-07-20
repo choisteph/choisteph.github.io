@@ -5,18 +5,75 @@ html{
 /* body dark */
 /* all font source sans pro or sans-serif fallback */
 body {
-    background-color: #181818;
-    color: white;
-    font-family: 'Inria Serif', serif;
+    background-color: #14191d;
+    color: #e8e8e8;
+    font-family: 'Rubik', sans-serif;
 }
 
+/* links yellow */
+a{
+    color: #FFCAB1;
+}
+a:hover{
+    color: #FF7433;
+}
+
+/* h2 smaller */
+h2{
+    font-weight: 300;
+    font-size: 24px;
+}
 .pdf{
-    width: 50vw;
-    height: 50vh;
+    /* width: 30vw; */
+    height: 30vh;
 }
 .btn{
     display:block;
     margin: 15px 0px;
-    color: white;
-    border: 1px solid white;
+    color: #e8e8e8;
+    border: 1px solid #e8e8e8;
+}
+.btn:hover{
+    color: grey;
+    border: 1px solid grey;
+}
+
+.linksList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.linksList li::before {
+    content: "\200B";
+  }
+
+.spaceit{
+    padding: 10px 0px;
+}
+
+.smallerHeading{
+    font-size: 18px;
+}
+
+/* project pages */
+.webFrame{
+    width: inherit;
+    height: 60vh;
+}
+
+.webImg{
+    width: inherit;
+}
+.whatIDidH4{
+    font-size: 22px;
+    font-weight: 700;
+}
+.accompList > li{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.explainList > li {
+    font-size: 16px;
+    margin : 10px 0px;
 }
