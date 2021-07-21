@@ -23,10 +23,13 @@ h2{
     font-weight: 300;
     font-size: 24px;
 }
-.pdf{
-    /* width: 30vw; */
-    height: 30vh;
+
+.resumeIcon{
+    width: 50px;
 }
+/* .pdf{
+    height: 30vh;
+} */
 .btn{
     display:block;
     margin: 15px 0px;
@@ -47,6 +50,24 @@ h2{
     content: "\200B";
   }
 
+.linksList > li{
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+.calcLinksList > li{
+    padding: 10px 0px;
+}
+.explainCalcs > li{
+    font-size: 16px;
+    margin: 0px 45px;
+}
+
+.aside{
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px 0px;
+}
 .spaceit{
     padding: 10px 0px;
 }

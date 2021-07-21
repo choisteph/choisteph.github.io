@@ -41,7 +41,7 @@
       <div class="container-fluid text-center" id="content" tabindex="-1">
         <div class="row">
           <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-            <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf#zoom=FitW" name="resume"></iframe>
+            <!-- <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf#zoom=FitW" name="resume"></iframe> -->
             <a class="btn" role="button" href="docs/stchoi_resume.pdf" target= _blank
             download="stchoi_resume" name="download" title="download my resume">
             Download my Resume
@@ -52,7 +52,7 @@
           <div class="col-12">
             <div class="row spaceit">
               <div class="col-12">
-                <h3>Check out some of my projects:</h3>
+                <h3>Read what I have to say about some of my projects:</h3>
                 <ul class="text-center linksList">
                   <li>
                     <a href="covid.html" title="covid mapping">covidmapping.org</a>
@@ -69,17 +69,48 @@
             <div class="row spaceit">
               <div class="col-12">
                 <h4 class="smallerHeading">... and take a look at the calculators I made:</h4>
-                <ul class="text-center linksList">
-                  <li>
-                    <a href="https://levelofcomfort.onrender.com/" title="Level of Comfort Bike Compatibility Calculator" alt="link out to level of comfort" target="_blank">Level of Comfort - Bike Compatibility Index Calculator</a>
-                  </li>
-                  <li>
-                    <a href="https://aadtcalculator.onrender.com/" title="AADT Calculator" alt="link out to AADT Calculator" target="_blank">Annual Average Daily Traffic Calculator</a>
-                  </li>
-                  <li>
-                    The <a href="https://www.mistartmap.info/" title="MI Start Map" alt="link out to MI Start Map" target="_blank">MI Start Map Risk Level Calculator</a> (click the link in the alert at the top of the page!)
-                  </li>
-                </ul>
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-6">
+                    <ul class="calcLinksList linksList">
+                      <li>
+                        <a href="https://levelofcomfort.onrender.com/" title="Level of Comfort Bike Compatibility Calculator" alt="link out to level of comfort" target="_blank">Level of Comfort - Bike Compatibility Index Calculator</a>
+                        <ul class="explainCalcs text-left">
+                          <li>
+                            Calculates how well roads could potentially accomodate bicycles based on different factors such as traffic and type of road
+                          </li>
+                          <li>
+                            I designed the page layout!
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="https://aadtcalculator.onrender.com/" title="AADT Calculator" alt="link out to AADT Calculator" target="_blank">Annual Average Daily Traffic Calculator</a>
+                        <ul class="explainCalcs text-left">
+                          <li>
+                            Calculates an estimate for a road's Annual Average Daily Traffic based on census tract data and different road factors
+                          </li>
+                          <li>
+                            I designed the page layout and the road highlighting behavior!
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="https://www.mistartmap.info/" title="MI Start Map" alt="link out to MI Start Map" target="_blank">MI Start Map Risk Level Calculator</a>
+                        <span class="aside">(click the link in the alert at the top of the page!)</span>
+                        <ul class="explainCalcs text-left">
+                          <li>
+                            Translates between risk levels seen on MI Start Map and the CDC Indicator (the two have different cutoff points for different risk levels!)
+                          </li>
+                          <li>
+                            I designed the calculator's behavior!
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-3"></div>
+                </div> <!--row to push things to the center-->
               </div>
             </div>
           </div>
@@ -87,14 +118,14 @@
         <div class="row portfoSection">
           <div class="col-12">
             <h3>Connect with me:</h3>
-            <ul class="text-center linksList">
-              <li>
+            <ul class="text-center list-inline ">
+              <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
               </li>
-              <li>
+              <li class="list-inline-item">
                 <a href="https://github.com/choisteph" target=_blank title="stephanie's github">github</a>
               </li>
-              <li>
+              <li class="list-inline-item">
                 <a href="mailto:stchoi@umich.edu" title="send something to stephanie's email">email</a>
               </li>
             </ul>
