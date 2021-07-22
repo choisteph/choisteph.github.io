@@ -1,11 +1,12 @@
 /* make scroll smooth */
 html{
     scroll-behavior: smooth;
+
 }
-/* body dark */
 /* all font source sans pro or sans-serif fallback */
 body {
     background-color: #14191d;
+    padding: 20px 0px;
     color: #e8e8e8;
     font-family: 'Rubik', sans-serif;
 }
@@ -39,6 +40,14 @@ h2{
 .btn:hover{
     color: grey;
     border: 1px solid grey;
+}
+
+.projLink{
+    font-size: 20px;
+}
+
+.frontImg{
+    width: 75%;
 }
 
 .linksList{
