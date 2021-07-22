@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>stephanie's portfolio</title>
+    <title>stephanie's portfolio | SOS Dashboard</title>
 
     <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -22,64 +22,94 @@
 
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <ul class="navbar-nav mr-auto ">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#projectcollection">projects</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">&#8592; Go Back</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
     <main>
       <div class="container" id="content" tabindex="-1">
-        <div class="row">
-            <div class="col-sm-12 d-flex justify-content-center align-items-center">
-                <h1>sos opioid dashboard</h1>
-            </div> <!--closes col-->
-        </div>  <!--closes row-->
-        <div class="row">
-            <div class="col-sm-12 d-flex justify-content-center align-items-center">
-                <img class="projimage" src="img/icon_t.png" alt="sos logo" aria-describedby="soslogo">
-                <p class="desc" id="soslogo">two blue arcs that surround a yellow circle in the middle. the blue arcs form a circular shape.</p>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-center">System for Opioid Overdose Surveillance (SOS) Dashboard</h1>
+              <h2 class="text-center">Tracking Opioid Overdose Cases in Michigan</h2>
+              <p class="text-center">May 2019 - May 2020</p>
             </div> <!--close col-->
-        </div> <!--close row-->
-        <div class="row">
-            <div class="col-sm-12 d-flex justify-content-center align-items-center">
-                <h2>spring/summer/fall 2019 - python flask - html/css/js</h2>
+          </div> <!--close row-->
+          <div class="row">
+            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+              <!-- <iframe class="webFrame" src="http://stchoi.pythonanywhere.com/"></iframe> -->
+              <a class="webImg" href="http://stchoi.pythonanywhere.com/" target="_blank" alt="link out to stephanie's demo of the SOS Opioid Surveillance Dashboard">
+                <img class="webImg" src="img/sos.png" alt="image of front page of SOS Dashboard demo page">
+              </a>
+              <a href="http://stchoi.pythonanywhere.com/" target="_blank" alt="link out to stephanie's demo of the SOS Opioid Surveillance Dashboard">check out my demo version of the SOS Dashboard (optimized for desktop).</a>
+              <p>(Please use the login username: steph and password: choi)</p>
             </div> <!--close col-->
-        </div> <!--close row-->
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h3>dashboard demo</h3>
-                <a class="indlink" href="http://stchoi.pythonanywhere.com/" target=_blank title="PythonAnywhere-hosted pre-relase for SOS Dashboard"> link to project</a>
-                <p class="note">please use the login username: steph and password: choi</p>
+          </div> <!--closes row-->
+          <div class="row">
+            <div class="col-12">
+              <h3>About the SOS Dashboard:</h3>
+              <p>The SOS Dashboard provides policy makers and healthcare advocates a way to visually track where opioid cases take place in Michigan. It uses data from <a href="https://stchoi.pythonanywhere.com/about" target="_blank" alt="link out to about page for SOS dashboard">several sources</a> to provide real-time information. The dashboard itself uses maps, tables, and charts to display different case demographics.</p>
+              <p>The production version of this dashboard is not accessible to the general public due to data privacy and use agreements. <a href="https://systemforoverdosesurveillance.com/" target="_blank" alt="link out to the production version of the SOS dashboard. No access to data without login credentials.">You can check out the landing pages though!</a></p>
             </div> <!--close col-->
-        </div> <!--close row-->
+          </div> <!--close row-->
+          <div class="row">
+            <div class="col-12">
+              <h3>What I did:</h3>
+              <h4 class="whatIDidH4">Website Design (HTML/CSS/JS, Python - Flask)</h4>
+              <ul class="accompList">
+                <li>
+                  Designed all pages of the website using <b>Boostrap</b> and <b>Flask</b>.
+                  <ul class="explainList">
+                    <li>I designed all of the pages and their general layouts using Bootstrap due to its ease of use, good documentation, and straightforward layout. </li>
+                    <li>
+                      The website uses Flask to pass different county and region names to the dashboard, which then renders the data of the correct region. Using Flask also allowed for the implementation of a login system and more templating. Due to time constraints, I wasn't able to actually implement any extensive templating beyond displaying variables using Flask.
+                    </li>
+                    <li>
+                      There were specific limitations for the design of the production-ready dashboard contents that were difficult to navigate around. The contents were to be printer-friendly; when printed, the dashboard must fit within one or two letter-sized documents. Keeping this in mind, data visualizations, which were often SVGs that had limited scaling, had to be compact. For the design, I tried to prioritize the visibility of the labels, which would give the user enough context to navigate the document.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Use of <b>recognizable colors</b> to keep with brand identity.
+                  <ul class="explainList">
+                    <li>
+                      I used primarity University of Michigan colors to keep with our brand as a tool created by the University of Michigan.
+                    </li>
+                    <li>
+                      Because many users reported the need to print the dashboard contents, I tried to keep the colors on the printer-friendly view of the dashboard contrasted, and limited the use of color when possible.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>  <!--close col-->
+          </div> <!--close row-->
+      </div> <!--closes main container-->    
+    </main>
+    <footer class="footer">
+      <div class="container">
         <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 description" id="sos_description">
-                <p>The <b>System for Opioid Overdose Surveillance</b> is a near real-time opioid overdose surveillance system created through a partnership between the University of Michigan Injury Prevention Center and Michigan High Intensity Drug Trafficking Areas (HIDTA). SOS provides near real-time mapping of non-fatal and fatal overdose cases as well as aggregate data briefs to facilitate timely public health and public safety responses.</p>
-                <p>The dashboard utilizes Mapbox, Leaflet, and d3 to visualize and contextualize the collected and aggregated data. Key takeaways from this project were the ability to build upon rudimentary JavaScript, working in a small team, and seeing a project from concepts to execution.</p>
-                <div class="features" id="sos_features">
-                    <h4>dashboard features</h4>
-                    <ul>
-                       <li>user login</li>
-                       <li>auto-complete search</li>
-                       <li>mapbox map with county/city layers</li>
-                       <li>map markers with detailed data population</li>
-                       <li>sortable tables and filterable data visualizations</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-      </div> <!--closes main container-->
-    </main>    
+          <div class="col-12">
+            <h3 class="text-center">Connect with me:</h3>
+            <ul class="text-center list-inline ">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/choisteph" target=_blank title="stephanie's github">github</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:stchoi@umich.edu" title="send something to stephanie's email">email</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+      </div> <!--close container-->
+    </footer>
   </body>
 </html>
