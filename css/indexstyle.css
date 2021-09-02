@@ -28,10 +28,17 @@ h2{
 /* tree stuff */
 #tree{
     width: 10%;
+    vertical-align: baseline;
 }
 .leaf{
     height: 24px;
     margin: .7em;
+    vertical-align: baseline;
+}
+
+.goBackTree{
+    height: 1em;
+    vertical-align: baseline;
 }
 
 .resumeIcon{
