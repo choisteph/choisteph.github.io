@@ -25,6 +25,22 @@ h2{
     font-size: 24px;
 }
 
+/* tree stuff */
+#tree{
+    width: 10%;
+    vertical-align: baseline;
+}
+.leaf{
+    height: 24px;
+    margin: .7em;
+    vertical-align: baseline;
+}
+
+.goBackTree{
+    height: 1em;
+    vertical-align: baseline;
+}
+
 .resumeIcon{
     width: 50px;
 }
@@ -78,7 +94,14 @@ h2{
     padding: 5px 0px;
 }
 .spaceit{
-    padding: 10px 0px;
+    padding: 30px 0px;
+}
+
+.padIt{
+    padding-top: 15px;
+}
+.withSideP{
+    padding: 0px 15px;
 }
 
 .smallerHeading{
@@ -106,4 +129,12 @@ h2{
 .explainList > li {
     font-size: 16px;
     margin : 10px 0px;
+}
+
+.referenceImg{
+    max-width: 100px;
+}
+
+.screenshotImg{
+    max-height: 300px;
 }

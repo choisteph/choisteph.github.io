@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>stephanie's portfolio | covid-19 modules</title>
+
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="img/tree.png">
+
+    <!-- stylesheet -->
+    <link type="text/css" href="css/indexstyle.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">&#8592; Go Back <img class="goBackTree" src="img/tree.png" alt=""></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="d-flex align-items-center justify-content-center">
+          <img class="leaf" src="img/leaf_toright.png" alt="">
+          <h1 class="text-center">COVID-19 Learning Modules</h1>
+          <img class="leaf" src="img/leaf_toleft.png" alt="">
+        </div>
+        <h2 class="text-center">Dynamic Lessons on Infectious Disease</h2>
+        <p class="text-center">April 2021 - Present</p>
+    </header>
+    <main>
+      <div class="container" id="content" tabindex="-1">
+          <div class="row">
+            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+              <iframe class="webFrame" src="https://zeeelab.github.io/NIH-Modules/"></iframe>
+              <a href="https://zeeelab.github.io/NIH-Modules/" target="_blank" alt="link out to COVID-19 Learning Modules">check out COVID-19 Learning Modules.</a>
+            </div> <!--close col-->
+          </div> <!--closes row-->
+          <div class="row">
+            <div class="col-12">
+              <h3>About COVID-19 Learning Modules:</h3>
+              <p>COVID-19 Learning Modules are learning experiences that use dynamic animations and modeling to illustrate different concepts pertaining to the spread of infectious disease. Currently, Modules 1 through 3 explore the SIR model.</p>
+              <p>The site is built with ReactJS and uses the GSAP library's scrollytelling features. Various SVGs are populated with different figures and are positioned and transformed based on scroll position, which provides a more robust and fun expereience for users.</p>
+            </div> <!--close col-->
+          </div> <!--close row-->
+          <div class="row">
+            <div class="col-12">
+              <h3>What I did:</h3>
+              <h4 class="whatIDidH4">Site Design and Functionality (ReactJS, GSAP)</h4>
+              <ul class="accompList"> 
+                <li>
+                  Restructured the site layout using <b>class-based JSS</b> and CSS. Colors were also updated to minimize eye-strain.
+                  <ul class="explainList">
+                    <div class="referenceImageDiv d-flex align-items-center justify-content-around">
+                      <img class="screenshotImg" src="img/module_demo_1.png" alt="image of early draft for COVID-19 Learning Module's first module">
+                      <img class="screenshotImg" src="img/module_demo_2.png" alt="image of current version of COVID-19 Learning Module's first module">
+                    </div>
+                    <li>
+                      The original draft of the website used CSS-exclusively to style DOM elements. I used JSS whenever possible to help keep styles scoped to each view. There were several issues with styles persisting across views when that wasn't the desired behavior, so using JSS helped solve a lot of these issues.
+                    </li>
+                    <li>
+                      Larger, bolder fonts and softer colors were used to make it easier to read text and to reduce eye strain.
+                    </li>
+                  </ul> <!--close sub UL-->
+                </li>
+                <li>
+                  Integrated <b>SVG morphing</b> to show more robust transitions.
+                  <ul class="explainList">
+                    <div class="referenceImageDiv d-flex align-items-center justify-content-around">
+                      <img class="referenceImg" src="img/sus_dude.png" alt="image of COVID-19 Learning Module's main character in the neutral, susceptible state">
+                      <img class="referenceImg" src="img/inf_dude.png" alt="image of COVID-19 Learning Module's main character in the sick, infected state">
+                      <img class="referenceImg" src="img/rec_dude.png" alt="image of COVID-19 Learning Module's main character in the positive, recovered state">
+                    </div>
+                    <li>
+                      To transition the main character between the susceptible, infected, and recovered states, I split each body element into its own group and then used a SVG morphing library to apply transitions at different progress points throughout the experience.
+                    </li>
+                  </ul> <!--close sub UL-->
+                </li>
+              </ul> <!--close website design UL-->
+            </div>
+          </div> <!--close row-->
+      </div> <!--closes main container-->    
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-center">Connect with me:</h3>
+            <ul class="text-center list-inline ">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/choisteph" target=_blank title="stephanie's github">github</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:stchoi@umich.edu" title="send something to stephanie's email">email</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+        <div class="row">
+          <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+            <!-- <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf#zoom=FitW" name="resume"></iframe> -->
+            <a class="btn" role="button" href="docs/stchoi_resume.pdf" target= _blank
+            download="stchoi_resume" name="download" title="download my resume">
+            Download my Resume
+          </a>
+          </div>
+        </div>     
+      </div> <!--close container-->
+    </footer>
+    <script>
+      $(window).resize(function(){
+        document.querySelector('.webFrame').contentDocument.location.reload(true);
+      })
+    </script>
+  </body>
+</html>
