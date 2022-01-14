@@ -7,15 +7,12 @@ html{
 /* all font source sans pro or sans-serif fallback */
 body {
     background-color: #14191d;
-    padding: 20px 45px;
     color: #f3f3f3;
-    font-family: 'Rubik', sans-serif;    
+    font-family: 'Rubik', sans-serif;  
+    padding: 5px;  
 }
 
-/* header given padding */
-header{
-    padding: 0px 15px;
-}
+
 
 /* links yellow */
 a{
@@ -37,24 +34,16 @@ a:hover{
 .myname{
     font-size: 72px;
     font-weight: 500;
-    /* padding: 5px; */
-    /* font-family: 'Roboto Mono', monospace; */
-    /* display: ruby; */
 }
+
 .fed{
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
-    /* color: white;
-    background-color: #c2b07d; */
-    /* cursor: pointer; */
 }
 
 .uxd{
     font-family: 'Merriweather', serif;
     font-weight: 500;
-    /* color: white;
-    background-color: #648661; */
-    cursor: pointer;
 }
 
 .note{
@@ -78,69 +67,10 @@ h3{
     font-size: 1.2rem;
 }
 
-/* scrolling stuff */
-/* references:https://codepen.io/hubspot/pen/WNpgbBd */
-/* #scrollContainer{
-    overflow: hidden;
-}
-.scrollContents{
-    display: inline-block;
-    padding: 0px 15px;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    
-    -moz-animation: my-animation 15s linear infinite;
-    -webkit-animation: my-animation 15s linear infinite;
-    animation: my-animation 15s linear infinite;
-} */
-
-/* @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
-  
-
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-} */
-/* tree stuff */
-/* #tree{
-    width: 10%;
-    vertical-align: baseline;
-}
-.leaf{
-    height: 24px;
-    margin: .7em;
-    vertical-align: baseline;
-}
-
-.goBackTree{
-    height: 1em;
-    vertical-align: baseline;
-} */
-
-
 .resumeIcon{
     width: 50px;
 }
-/* .pdf{
-    height: 30vh;
-} */
+
 /* button stuff */
 .myButton{
     display:block;
@@ -176,15 +106,28 @@ h3{
 }
 /* frontpage project */
 .proj{
+    background-color: rgba(128, 128, 128, 0.212);
+    margin: 15px 0px;
     padding: 15px 0px;
 }
 
+/* .projRow{
+
+} */
 .projLink{
-    font-size: 20px;
+    padding-left: 15px;
+    font-size: 1rem;
+}
+
+.skills{
+    color: yellowgreen;
+    font-size: 0.8rem;
+    padding: 15px;
+    margin: 0;
 }
 
 .frontImg{
-    width: 75%;
+    width: 50%;
 }
 
 .linksList{
@@ -270,13 +213,20 @@ h3{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 20px 50px;
+    }
+    header{
+        padding: 15px;
+    }
+    .projLink{
+        padding: 15px 0px;
+        font-size: 1.2rem;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
     .superEdges{
         padding-left: 90px;
         padding-right: 90px;
