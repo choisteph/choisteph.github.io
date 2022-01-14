@@ -22,19 +22,22 @@
 
   </head>
   <body>
-    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <a href="#top" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <a name="top"></a>
     <header>
         <nav class="navbar navbar-expand-lg">
           <ul class="navbar-nav mr-auto ">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">&#8592; Go Back <img class="goBackTree" src="img/tree.png" alt=""></a>
+              <a class="nav-link" href="index.html">&#8592; Go Back 
+                <!-- <img class="goBackTree" src="img/tree.png" alt=""> -->
+              </a>
             </li>
           </ul>
         </nav>
         <div class="d-flex align-items-center justify-content-center">
-          <img class="leaf" src="img/leaf_toright.png" alt="">
+          <!-- <img class="leaf" src="img/leaf_toright.png" alt=""> -->
           <h1 class="text-center">System for Opioid Overdose Surveillance (SOS) Dashboard</h1>
-          <img class="leaf" src="img/leaf_toleft.png" alt="">
+          <!-- <img class="leaf" src="img/leaf_toleft.png" alt=""> -->
         </div>
         <h2 class="text-center">Tracking Opioid Overdose Cases in Michigan</h2>
         <p class="text-center">May 2019 - May 2020</p>
@@ -65,6 +68,47 @@
               <h4 class="whatIDidH4">Website Design (HTML/CSS/JS, Python - Flask)</h4>
               <ul class="accompList">
                 <li>
+                  Created several low-fidelity <b>design and interaction sketches</b> using basic drawing tools.
+                  <ul class="explainList">
+                    <div class="referenceImageDiv d-flex align-items-center justify-content-around">
+                      <img class="screenshotImg" src="img/sketch1.png" alt="rough mockup of Michigan opioid heatmap and statistics dashboard">
+                      <img class="referenceImg" src="img/sketch2.jpg" alt="rough mockup of Michigan opioid interaction sequence to access dashboard contents">
+                      <img class="referenceImg" src="img/sketch3.jpg" alt="rough mockup of layout of dashboard data visualizations">
+                    </div>
+                    <li>
+                      I created a basic interaction flow and positioned data visualization tools using basic sketches. Since the data was sensitive, it was important to include a login sequence to restrict access to certain data. I conducted research on different data visualizations (such as donut graphs and pie charts) to see what user limitations existed.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Created low-fidelity <b>wireframes</b> using Adobe XD
+                  <div class="referenceImageDiv d-flex align-items-center justify-content-around">
+                    <img class="screenshotImg" src="img/wireframes_1.png" alt="rough wireframe of a login screen-based interaction">
+                    <img class="referenceImg" src="img/wireframe_2.png" alt="rough mockup of layout of a one-page scrolling experience">
+                  </div>
+                  <ul class="explainList">
+                    <li>
+                      Adobe XD was used to create base wireframes. Different interaction sequences were mocked to assess desirability of the different ways to access data.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Created low-fidelity prototypes <b>with interactions</b> using Adobe XD
+                  <ul class="explainList">
+                    <div class="vidDiv d-flex flex-column align-items-center justify-content-center">
+                      <iframe class="vidEmbed" src="https://youtube.com/embed/FEpCwcxaSHM" title="SOS Dashboard Interaction Prototype" frameborder="0" allowfullscreen></iframe>
+                        <button role="button" class="btn myButton" href="docs/Dashboard_lofi_1.pdf" target= _blank
+                        download="Dashboard_lofi_1" name="download" title="download pdf wireframe">Download PDF version of this prototype</button>
+                    </div>
+                    <li>
+                      This step got us a lot closer to the look and feel of the final impelementation. I used the interaction functions in Adobe XD to map out the interaction tree. This step highlighted different stylistic choices that would help users understand how their inputs would impact the experience.
+                    </li>
+                    <li>
+                      I fleshed out the color scheme and colors of different data elements during this stage.
+                    </li>
+                  </ul>
+                </li>
+                <li>
                   Designed all pages of the website using <b>Boostrap</b> and <b>Flask</b>.
                   <ul class="explainList">
                     <li>I designed all of the pages and their general layouts using Bootstrap due to its ease of use, good documentation, and straightforward layout. </li>
@@ -79,6 +123,10 @@
                 <li>
                   Use of <b>recognizable colors</b> to keep with brand identity.
                   <ul class="explainList">
+                    <div class="referenceImageDiv d-flex align-items-center justify-content-around">
+                      <img class="screenshotImg" src="img/icon_t.png" alt="the SOS dashboard icon is a yellow circle surrounded by two blue arcs to the immediate left and right of the yellow circle.">
+                      <img class="screenshotImg" src="img/graphcolor.png" alt="a bar chart graph with yellow bars and a dark-blue trend line. below is a zoomed-out view of the bar chart with trend line">
+                    </div>
                     <li>
                       I used primarity University of Michigan colors to keep with our brand as a tool created by the University of Michigan.
                     </li>
@@ -93,11 +141,11 @@
       </div> <!--closes main container-->    
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <h3 class="text-center">Connect with me:</h3>
-            <ul class="text-center list-inline ">
+            <h2>Connect with me:</h2>
+            <ul class="list-inline ">
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
               </li>
@@ -111,14 +159,17 @@
           </div>
         </div>  
         <div class="row">
-          <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+          <div class="col-12 d-flex align-items-center justify-content-between">
             <!-- <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf#zoom=FitW" name="resume"></iframe> -->
-            <a class="btn" role="button" href="docs/stchoi_resume.pdf" target= _blank
+            <button class="btn myButton" role="button" href="docs/stchoi_resume.pdf" target= _blank
             download="stchoi_resume" name="download" title="download my resume">
-            Download my Resume
+            Download my Resume <i class="fas fa-file-download"></i>
+          </button>
+          <a href="#top" title="back to top">
+            &uarr; Back to Top
           </a>
           </div>
-        </div>     
+        </div>   
       </div> <!--close container-->
     </footer>
   </body>
