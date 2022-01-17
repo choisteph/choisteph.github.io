@@ -192,6 +192,10 @@ h3{
 }
 
 /* project pages */
+/* projectSubtitle */
+.projSubtitle{
+    font-size: 1.3rem;
+}
 .webFrame{
     width: inherit;
     height: 60vh;
