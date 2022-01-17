@@ -196,6 +196,11 @@ h3{
 .projSubtitle{
     font-size: 1.3rem;
 }
+
+.emphasis{
+    color:yellowgreen;
+    font-weight: bold;
+}
 .webFrame{
     width: inherit;
     height: 60vh;
@@ -218,16 +223,23 @@ h3{
     margin : 10px 0px;
 }
 
-.referenceImg{
+/* .referenceImg{
     max-width: 100px;
 }
 
 .screenshotImg{
     max-height: 300px;
+} */
+
+.referenceImg{
+    width: 95%;
+}
+.gifImg{
+    width: 50%;
 }
 
 .vidEmbed{
-    width: 420px;
+    width: 560px;
     height: 315px;
 }
 

@@ -7,12 +7,9 @@
 
     <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     <!-- favicon -->
-    <link rel="icon" href="img/tree.png">
+        <link rel="icon" href="img/favicon.png">
 
     <!-- stylesheet -->
     <link type="text/css" href="css/indexstyle.css" rel="stylesheet">
@@ -46,7 +43,7 @@
       <div class="container" id="content" tabindex="-1">
           <div class="row">
             <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-              <iframe class="webFrame" src="https://covidmapping.org/"></iframe>
+              <iframe class="webFrame" id="covmap" src="https://covidmapping.org/"></iframe>
               <a href="https://covidmapping.org/" target="_blank" alt="link out to covidmapping.org">check out covidmapping.org.</a>
             </div> <!--close col-->
           </div> <!--closes row-->
@@ -64,16 +61,22 @@
               <h4 class="whatIDidH4">Website Design (HTML/CSS/JS)</h4>
               <ul class="accompList"> 
                 <li>
-                  Redesigned website, centering <b>clean and simple design</b> and <b>straightforward layout</b>.
+                  Redesigned website, centering <span class="emphasis">clean and simple design</span> and <span class="emphasis">straightforward layout</span>.
                   <ul class="explainList">
+                    <div class="referenceImageDiv">
+                      <img class="referenceImg" src="img/covid_designs.png" alt="three screenshots of the front page of covidmapping at different points in the development process">
+                    </div>
                     <li>
                       I used Bootstrap as base for design due to its extensive documentation and relative ease of access. New designers will be able to more easily contribute their designs to the website. I like to use clean and simple designs a lot, especially in academia and public-facing work where clarity and simplicity help reach the most people.
                     </li>
                   </ul> <!--close sub UL-->
                 </li>
                 <li>
-                  Incorporated different data visualizations through use of <b>visual design infographics</b>, <b>d3 data visualization modules</b>, and <b>color palettes</b>.
+                  Incorporated different data visualizations through use of <span class="emphasis">visual design infographics</span>, <span class="emphasis">d3 data visualization modules</span>, and <span class="emphasis">color palettes</span>.
                   <ul class="explainList">
+                    <div class="referenceImageDiv">
+                      <img class="referenceImg" src="img/covid_colors.png" alt="an image of four maps of michigan subdivided into hexagons that are colored based on the d3 blue-to-green, red-to-yellow, blue-shades, and purple-shades palettes">
+                    </div>
                     <li>
                       My lab coworkers who come from backgrounds in public health and epidemiology came up with the language and visual blueprint and I would turn this into web design. I made web-specific changes such as through the incorporation of d3 libraries for the data visualizations wherever I could and I had the data to. I worked with preexisting d3 code that my lab coworker created to update it or apply it to a new module. As a result of "converting" flat designs into web design and data visualizations, the data are more perceivable and accessible on the website.
                     </li>
@@ -85,8 +88,11 @@
               </ul> <!--close website design UL-->
               <h4 class="whatIDidH4">Data Upkeep (Python)</h4>
               <ul class="accompList">
+                <div class="referenceImageDiv">
+                  <img class="referenceImg" src="img/covid_python.png" alt="an image of two sections of python code used to upload csvs to gist">
+                </div>
                 <li>
-                  Made weekly/biweekly updates by uploading compiled data to gists. <b>Semi-automated upload process for convenience</b>.
+                  Made weekly/biweekly updates by uploading compiled data to gists. <span class="emphasis">Semi-automated upload process for convenience</span>.
                   <ul class="explainList">
                     <li>
                       Data is compiled by my lab coworker and uploaded to a shared drive as a CSV file. I created a Python script that checks for the most recent folder of data and uploads those CSVs to Github gist, which then will update the data on the website. The Python script also checks for empty files (sometimes the data will not compile correctly) and checks that dates are formatted correctly. A process that would take fifteen minutes without the script now takes one console line to execute and complete!
@@ -130,9 +136,12 @@
         </div>   
       </div> <!--close container-->
     </footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>  
     <script>
       $(window).resize(function(){
-        document.querySelector('.webFrame').contentDocument.location.reload(true);
+        $('#covmap').attr('src', $('#covmap').attr('src'));
       })
     </script>
   </body>

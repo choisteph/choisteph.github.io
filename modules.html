@@ -7,12 +7,9 @@
 
     <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     <!-- favicon -->
-    <link rel="icon" href="img/tree.png">
+        <link rel="icon" href="img/favicon.png">
 
     <!-- stylesheet -->
     <link type="text/css" href="css/indexstyle.css" rel="stylesheet">
@@ -45,7 +42,7 @@
       <div class="container" id="content" tabindex="-1">
           <div class="row">
             <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-              <iframe class="webFrame" src="https://zeeelab.github.io/NIH-Modules/"></iframe>
+              <iframe class="webFrame" id="nihmodules" src="https://zeeelab.github.io/NIH-Modules/"></iframe>
               <a href="https://zeeelab.github.io/NIH-Modules/" target="_blank" alt="link out to COVID-19 Learning Modules">check out COVID-19 Learning Modules.</a>
             </div> <!--close col-->
           </div> <!--closes row-->
@@ -62,11 +59,10 @@
               <h4 class="whatIDidH4">Site Design and Functionality (ReactJS, GSAP)</h4>
               <ul class="accompList"> 
                 <li>
-                  Restructured the site layout using <b>class-based JSS</b> and CSS. Colors were also updated to minimize eye-strain.
+                  Restructured the site layout using <span class="emphasis">class-based JSS</span> and CSS. Colors were also updated to minimize eye-strain.
                   <ul class="explainList">
-                    <div class="referenceImageDiv d-flex align-items-center justify-content-around">
-                      <img class="screenshotImg" src="img/module_demo_1.png" alt="image of early draft for COVID-19 Learning Module's first module">
-                      <img class="screenshotImg" src="img/module_demo_2.png" alt="image of current version of COVID-19 Learning Module's first module">
+                    <div class="referenceImageDiv">
+                      <img class="referenceImg" src="img/modules_design.png" alt="a screenshot of the original design of the first covid module and a screenshot of the current design of the first covid module">
                     </div>
                     <li>
                       The original draft of the website used CSS-exclusively to style DOM elements. I used JSS whenever possible to help keep styles scoped to each view. There were several issues with styles persisting across views when that wasn't the desired behavior, so using JSS helped solve a lot of these issues.
@@ -77,12 +73,10 @@
                   </ul> <!--close sub UL-->
                 </li>
                 <li>
-                  Integrated <b>SVG morphing</b> to show more robust transitions.
+                  Integrated <span class="emphasis">SVG morphing</span> to show more robust transitions.
                   <ul class="explainList">
-                    <div class="referenceImageDiv d-flex align-items-center justify-content-around">
-                      <img class="referenceImg" src="img/sus_dude.png" alt="image of COVID-19 Learning Module's main character in the neutral, susceptible state">
-                      <img class="referenceImg" src="img/inf_dude.png" alt="image of COVID-19 Learning Module's main character in the sick, infected state">
-                      <img class="referenceImg" src="img/rec_dude.png" alt="image of COVID-19 Learning Module's main character in the positive, recovered state">
+                    <div class="referenceImageDiv">
+                      <img class="referenceImg gifImg" src="img/walkinggif.gif" alt="moving image of simple figure wearing purple walking across tiles labeled S, I and R while contorting its body to reflect different states of health">
                     </div>
                     <li>
                       To transition the main character between the susceptible, infected, and recovered states, I split each body element into its own group and then used a SVG morphing library to apply transitions at different progress points throughout the experience.
@@ -126,9 +120,12 @@
         </div>   
       </div> <!--close container-->
     </footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>   
     <script>
       $(window).resize(function(){
-        document.querySelector('.webFrame').contentDocument.location.reload(true);
+        $('#nihmodules').attr('src', $('#nihmodules').attr('src'));
       })
     </script>
   </body>
