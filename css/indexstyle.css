@@ -6,7 +6,7 @@ html{
 }
 /* all font source sans pro or sans-serif fallback */
 body {
-    background-color: #14191d;
+    background-color: #1c2125;
     color: #f3f3f3;
     font-family: 'Rubik', sans-serif;  
 }
@@ -87,6 +87,11 @@ nav{
 }
 
 /* front page styling */
+#frontPageH{
+    /* background-color:#131313; */
+    background: rgb(19,19,19);
+    background: linear-gradient(180deg, rgba(19,19,19,1) 75%, rgba(19,19,19,0) 100%);
+}
 .intro{
     font-weight: 700;
     /* line-height: 180%; */
@@ -138,9 +143,10 @@ h3{
 /* motto font size */
 .motto{
     font-size: 1rem;
-    padding: 15px 60px;
+    padding: 15px 60px 45px 60px;
     font-weight: 300;
     margin:0;
+
     /* font-style: italic; */
 }
 
