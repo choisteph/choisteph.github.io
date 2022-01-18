@@ -36,7 +36,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapser">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-lg-0">
               <li class="nav-item text-end">
                 <a class="nav-link navPersonalLink" href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="Stephanie's LinkedIn"><i class="fab fa-linkedin navPersonalIcon"></i></a>
               </li>
@@ -74,7 +74,7 @@
       <div class="container" id="content" tabindex="-1">
           <div class="row">
             <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-              <iframe class="webFrame" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fxhztu3kGj97cSjlq7L4rc0%2Fokn-interface%3Fnode-id%3D10%253A245%26scaling%3Dscale-down-width" allowfullscreen></iframe>
+              <iframe id="oknFigma" class="webFrame" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fxhztu3kGj97cSjlq7L4rc0%2Fokn-interface%3Fnode-id%3D10%253A245%26scaling%3Dscale-down-width" allowfullscreen></iframe>
               <a href="http://okn.eecs.umich.edu/" target="_blank" alt="link out to TEOKN Bigmap">check out the TEOKN Bigmap implementation.</a>
             </div> <!--close col-->
           </div> <!--closes row-->
@@ -211,7 +211,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>      
     <script>
       $(window).resize(function(){
-        document.querySelector('.webFrame').contentDocument.location.reload(true);
+        $('#oknFigma').attr('src', $('#oknFigma').attr('src'));
       })
     </script>
   </body>

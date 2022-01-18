@@ -49,15 +49,20 @@ nav{
     margin: 0;
 }
 .breadcrumb-item{
-    padding: 0px 15px;
+    font-size: 1rem;
+    padding: 0px;
 }
 .breadcrumb-item.active{
     background-color: transparent;
     color: yellowgreen;
     border: 0px;
     font-weight: 700;
+    padding: 0px;
 }
+.breadcrumb-item.active::before{
 
+    padding: 0px 5px;
+}
 /* footer */
 .footer{
     width: 100%;
@@ -151,15 +156,7 @@ h3{
     background-color: transparent;
     border: 1px solid #e8e8e8;
 }
-#fedButton{
-    /* font-family: 'Roboto Mono', monospace; */
-    /* background-color: #5e3636; */
-    
-}
-#uxdButton{
-    /* font-family: 'Merriweather', serif; */
-    /* background-color: #648661; */
-}
+
 .myButton:hover{
     color: grey;
     border: 1px solid grey;
