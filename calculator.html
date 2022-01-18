@@ -26,19 +26,24 @@
     <a class="sr-only sr-only-focusable" href="#top">Skip to main content</a>
     <a name="top"></a>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Calculators</li>
+          </ol>
+        </nav>
+        <!-- <nav class="navbar navbar-expand-lg">
             <ul class="navbar-nav mr-auto ">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">&#8592; Go Back
-                  <!-- <img class="goBackTree" src="img/tree.png" alt=""> -->
                 </a>
               </li>
             </ul>
-          </nav>
+          </nav> -->
           <div class="d-flex flex-column align-items-center justify-content-center">
             <!-- <img class="leaf" src="img/leaf_toright.png" alt=""> -->
             <h1 class="text-center">Calculators</h1>
-            <img class="introimg" src="img/calculator.png" alt="">
+            <img class="introimg" src="img/CALCS.png" alt="">
             <!-- <img class="leaf" src="img/leaf x_toleft.png" alt=""> -->
           </div>
           <h2 class="projSubtitle text-center">Various Calculator Designs</h2>
@@ -98,36 +103,31 @@
         </div>
       </div> <!--closes main container-->
     </main>
+    <div class="row justify-content-end backtotop">
+      <div class="col-4 text-right">
+        <a href="#top" title="back to top">
+          &uarr; Back to Top
+        </a>
+      </div>
+    </div> 
     <footer class="footer">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <h2>Connect with me:</h2>
-            <ul class="list-inline ">
-              <li class="list-inline-item">
-                <a href="https://www.LinkedIn.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's LinkedIn">LinkedIn</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://Github.com/choisteph" target=_blank title="stephanie's Github">Github</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="mailto:stchoi@umich.edu" title="send something to stephanie's Email">Email</a>
-              </li>
-            </ul>
+            <div class="footerContents d-flex flex-column align-items-center justify-content-around">
+              <h2 id="footerHeader">Connect with me</h2>
+              <div class="footerLinks d-flex align-items-center justify-content-center">
+                <a class="footerLink" href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's LinkedIn"><i class="fab fa-linkedin footerIcon"></i></a>
+                <a class="footerLink" href="https://github.com/choisteph" target=_blank title="stephanie's Github"><i class="fab fa-github footerIcon"></i></a>
+                <a class="footerLink" href="mailto:stchoi@umich.edu" title="send something to stephanie's Email"><i class="fas fa-envelope footerIcon"></i></a>
+              </div>
+              <button class="btn myButton" role="button" href="docs/stchoi_resume.pdf" target= _blank
+                  download="stchoi_resume" name="download" title="download my resume">
+                  Download my Resume <i class="fas fa-file-download"></i>
+              </button>              
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 d-flex align-items-center justify-content-between">
-            <!-- <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf#zoom=FitW" name="resume"></iframe> -->
-            <button class="btn myButton" role="button" href="docs/stchoi_resume.pdf" target= _blank
-            download="stchoi_resume" name="download" title="download my resume">
-            Download my Resume <i class="fas fa-file-download"></i>
-          </button>
-          <a href="#top" title="back to top">
-            &uarr; Back to Top
-          </a>
-          </div>
-        </div>
+        </div>   
       </div> <!--close container-->
     </footer>
     <!-- jquery -->

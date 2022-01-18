@@ -12,8 +12,6 @@ body {
     padding: 5px;  
 }
 
-
-
 /* links yellow */
 a{
     color: #e9e9e9;
@@ -24,6 +22,45 @@ a:hover{
     font-weight: 500;
 }
 
+/* navbar */
+nav{
+    /* background-color: #0000006e; */
+    color: #f3f3f3
+}
+
+.breadcrumb{
+    background-color: transparent;
+    color: #f3f3f3
+}
+.breadcrumb-item{
+    padding: 0px 15px;
+}
+.breadcrumb-item.active{
+    background-color: transparent;
+    color: yellowgreen;
+    border: 0px;
+    font-weight: 700;
+}
+
+/* footer */
+.footerContents{
+    padding:15px;
+    width: 100%;
+    background-color: #0000006e;
+}
+
+#footerHeader{
+    font-size: 1.6rem;
+    padding-bottom: 15px;
+    color: yellowgreen;
+}
+.footerLink{
+    padding: 15px;
+}
+.footerIcon{
+    font-size: 2.5rem;
+    color: inherit;
+}
 
 /* front page styling */
 .intro{
@@ -148,10 +185,11 @@ h3{
     margin: 0;
 }
 
-.frontImg{
-    /* width: 50%; */
+.backtotop{
+    padding-bottom: 15px;
 }
 
+/* calculator page */
 .linksList{
     margin: 0;
     padding: 0;
@@ -173,12 +211,7 @@ h3{
     margin: 0px 45px;
 }
 
-.aside{
-    display: block;
-    font-size: 14px;
-    font-style: italic;
-    padding: 5px 0px;
-}
+
 .spaceit{
     padding-bottom: 30px;
 }
@@ -223,14 +256,6 @@ h3{
     margin : 10px 0px;
 }
 
-/* .referenceImg{
-    max-width: 100px;
-}
-
-.screenshotImg{
-    max-height: 300px;
-} */
-
 .referenceImg{
     width: 95%;
 }
@@ -244,7 +269,7 @@ h3{
 }
 
 .introimg{
-    width: 20%;
+    width: 50%;
     min-width: 20vw;
 }
 
