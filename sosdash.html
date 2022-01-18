@@ -3,40 +3,70 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>stephanie's portfolio | SOS Dashboard</title>
+    <title>Stephanie's Portfolio | SOS Dashboard</title>
 
     <!-- bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- favicon -->
-    <link rel="icon" href="img/tree.png">
+        <link rel="icon" href="img/favicon.png">
 
     <!-- stylesheet -->
     <link type="text/css" href="css/indexstyle.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
-
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  </head>
   <body>
-    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <a href="#top" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <a name="top"></a>
     <header>
-        <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" aria-label="breadcrumb">
+        <div class="container-fluid">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">SOS Dashboard</li>
+          </ol>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapser" aria-controls="navbarCollapser" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapser">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item text-end">
+                <a class="nav-link navPersonalLink" href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="Stephanie's LinkedIn"><i class="fab fa-linkedin navPersonalIcon"></i></a>
+              </li>
+              <li class="nav-item text-end">
+                <a class="nav-link navPersonalLink" href="https://github.com/choisteph" target=_blank title="Stephanie's Github"><i class="fab fa-github navPersonalIcon"></i></a>
+              </li>
+              <li class="nav-item text-end">
+                <a class="nav-link navPersonalLink" href="mailto:stchoi@umich.edu" title="send something to Stephanie's Email"><i class="fas fa-envelope navPersonalIcon"></i></a>
+              </li>
+              <li class="nav-item text-end">
+                <a class="nav-link navPersonalLink" role="button" href="docs/stchoi_resume.pdf" target= _blank
+              download="stchoi_resume" title="download Stephanie's Resume"><i class="fas fa-file-download navPersonalIcon"></i></a>
+              </li>
+            </ul>              
+          </div>
+        </div>
+      </nav>
+        <!-- <nav class="navbar navbar-expand-lg">
           <ul class="navbar-nav mr-auto ">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">&#8592; Go Back <img class="goBackTree" src="img/tree.png" alt=""></a>
+              <a class="nav-link" href="index.html">&#8592; Go Back 
+              </a>
             </li>
           </ul>
-        </nav>
-        <div class="d-flex align-items-center justify-content-center">
-          <img class="leaf" src="img/leaf_toright.png" alt="">
+        </nav> -->
+        <div class="headerContents d-flex align-items-center justify-content-center">
+          <!-- <img class="leaf" src="img/leaf_toright.png" alt=""> -->
           <h1 class="text-center">System for Opioid Overdose Surveillance (SOS) Dashboard</h1>
-          <img class="leaf" src="img/leaf_toleft.png" alt="">
+          <!-- <img class="leaf" src="img/leaf_toleft.png" alt=""> -->
         </div>
-        <h2 class="text-center">Tracking Opioid Overdose Cases in Michigan</h2>
+        <h2 class="projSubtitle text-center">Tracking Opioid Overdose Cases in Michigan</h2>
         <p class="text-center">May 2019 - May 2020</p>
     </header>
     <main>
@@ -45,10 +75,10 @@
           <div class="row">
             <div class="col-12 d-flex flex-column align-items-center justify-content-center">
               <!-- <iframe class="webFrame" src="http://stchoi.pythonanywhere.com/"></iframe> -->
-              <a class="webImg" href="http://stchoi.pythonanywhere.com/" target="_blank" alt="link out to stephanie's demo of the SOS Opioid Surveillance Dashboard">
+              <a class="webImg" href="http://stchoi.pythonanywhere.com/" target="_blank" alt="link out to Stephanie's demo of the SOS Opioid Surveillance Dashboard">
                 <img class="webImg" src="img/sos.png" alt="image of front page of SOS Dashboard demo page">
               </a>
-              <a href="http://stchoi.pythonanywhere.com/" target="_blank" alt="link out to stephanie's demo of the SOS Opioid Surveillance Dashboard">check out my demo version of the SOS Dashboard (optimized for desktop).</a>
+              <a href="http://stchoi.pythonanywhere.com/" target="_blank" alt="link out to Stephanie's demo of the SOS Opioid Surveillance Dashboard">check out my demo version of the SOS Dashboard (optimized for desktop).</a>
               <p>(Please use the login username: steph and password: choi)</p>
             </div> <!--close col-->
           </div> <!--closes row-->
@@ -65,8 +95,49 @@
               <h4 class="whatIDidH4">Website Design (HTML/CSS/JS, Python - Flask)</h4>
               <ul class="accompList">
                 <li>
-                  Designed all pages of the website using <b>Boostrap</b> and <b>Flask</b>.
+                  Created several low-fidelity <span class="emphasis">design and interaction sketches</span> using basic drawing tools.
                   <ul class="explainList">
+                    <div class="referenceImageDiv">
+                      <img class="referenceImg" src="img/sos_sketches.png" alt="an image of three low-fidelity sketches made of SOS dashboard layout">
+                    </div>
+                    <li>
+                      I created a basic interaction flow and positioned data visualization tools using basic sketches. Since the data was sensitive, it was important to include a login sequence to restrict access to certain data. I conducted research on different data visualizations (such as donut graphs and pie charts) to see what user limitations existed.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Created low-fidelity <span class="emphasis">wireframes</span> using Adobe XD.
+                  <ul class="explainList">
+                    <div class="referenceImageDiv">
+                      <img class="referenceImg" src="img/sos_wireframes.png" alt="an image of two low-fidelity wireframes made of SOS dashboard layout: one includes three screens to represent a login sequence and one includes one long screen with a landing design at the top, which scrolls down into data visualization aids such as a map and different pie and bar charts">
+                    </div>
+                    <li>
+                      Adobe XD was used to create base wireframes. Different interaction sequences were mocked to assess desirability of the different ways to access data.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Created low-fidelity prototypes <span class="emphasis">with interactions</span> using Adobe XD.
+                  <ul class="explainList">
+                    <div class="vidDiv d-flex flex-column align-items-center justify-content-center">
+                      <iframe class="vidEmbed" src="https://youtube.com/embed/FEpCwcxaSHM" title="SOS Dashboard Interaction Prototype" frameborder="0" allowfullscreen></iframe>
+                        <button role="button" class="btn myButton" href="docs/sos_dash_lofi.pdf" target= _blank
+                        download="sos_dash_lofi" name="download" title="download pdf wireframe">Download PDF version of this prototype</button>
+                    </div>
+                    <li>
+                      This step got us a lot closer to the look and feel of the final impelementation. I used the interaction functions in Adobe XD to map out the interaction tree. This step highlighted different stylistic choices that would help users understand how their inputs would impact the experience.
+                    </li>
+                    <li>
+                      I fleshed out the color scheme and colors of different data elements during this stage.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Designed all pages of the website using <span class="emphasis">Boostrap</span> and <span class="emphasis">Flask</span>.
+                  <ul class="explainList">
+                    <div class="referenceImageDiv">
+                      <img class="referenceImg" src="img/sos_flask.png" alt="two screenshots of code that showcase python and flask templating, placed on top of one screenshot of the readme for the SOS dashboard">
+                    </div>
                     <li>I designed all of the pages and their general layouts using Bootstrap due to its ease of use, good documentation, and straightforward layout. </li>
                     <li>
                       The website uses Flask to pass different county and region names to the dashboard, which then renders the data of the correct region. Using Flask also allowed for the implementation of a login system and more templating. Due to time constraints, I wasn't able to actually implement any extensive templating beyond displaying variables using Flask.
@@ -77,8 +148,11 @@
                   </ul>
                 </li>
                 <li>
-                  Use of <b>recognizable colors</b> to keep with brand identity.
+                  Use of <span class="emphasis">recognizable colors</span> to keep with brand identity.
                   <ul class="explainList">
+                    <div class="referenceImageDiv">
+                      <img class="referenceImg" src="img/sos_colors.png" alt="an image of the logo of the SOS Dashboard, a bar chart, and a highlighted map county pointing to the University of Michigan color guide's 'maize' color">
+                    </div>
                     <li>
                       I used primarity University of Michigan colors to keep with our brand as a tool created by the University of Michigan.
                     </li>
@@ -92,34 +166,35 @@
           </div> <!--close row-->
       </div> <!--closes main container-->    
     </main>
+    <div class="row justify-content-end backtotop">
+      <div class="col-4 text-end">
+        <a href="#top" title="back to top">
+          &uarr; Back to Top
+        </a>
+      </div>
+    </div> 
     <footer class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <h3 class="text-center">Connect with me:</h3>
-            <ul class="text-center list-inline ">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's linkedin">linkedin</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/choisteph" target=_blank title="stephanie's github">github</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="mailto:stchoi@umich.edu" title="send something to stephanie's email">email</a>
-              </li>
-            </ul>
+            <div class="footerContents d-flex flex-column align-items-center justify-content-around">
+              <h2 id="footerHeader">Connect with me</h2>
+              <div class="footerLinks d-flex align-items-center justify-content-center">
+                <a class="footerLink" href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="Stephanie's LinkedIn"><i class="fab fa-linkedin footerIcon"></i></a>
+                <a class="footerLink" href="https://github.com/choisteph" target=_blank title="Stephanie's Github"><i class="fab fa-github footerIcon"></i></a>
+                <a class="footerLink" href="mailto:stchoi@umich.edu" title="send something to Stephanie's Email"><i class="fas fa-envelope footerIcon"></i></a>
+              </div>
+              <button class="btn myButton" role="button" href="docs/stchoi_resume.pdf" target= _blank
+                  download="stchoi_resume" name="download" title="download my resume">
+                  Download my Resume <i class="fas fa-file-download"></i>
+              </button>              
+            </div>
           </div>
-        </div>  
-        <div class="row">
-          <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-            <!-- <iframe class="pdf" title="stephanie's resume" src="docs/stchoi_resume.pdf#zoom=FitW" name="resume"></iframe> -->
-            <a class="btn" role="button" href="docs/stchoi_resume.pdf" target= _blank
-            download="stchoi_resume" name="download" title="download my resume">
-            Download my Resume
-          </a>
-          </div>
-        </div>     
+        </div>   
       </div> <!--close container-->
     </footer>
+    <!-- jquery and bootstrapjs-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
   </body>
 </html>

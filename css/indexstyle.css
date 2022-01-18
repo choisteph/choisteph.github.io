@@ -1,71 +1,235 @@
 /* make scroll smooth */
 html{
     scroll-behavior: smooth;
+    cursor: auto;
 
 }
 /* all font source sans pro or sans-serif fallback */
 body {
-    background-color: #14191d;
-    padding: 20px 0px;
-    color: #e8e8e8;
-    font-family: 'Rubik', sans-serif;
+    background-color: #1c2125;
+    color: #f3f3f3;
+    font-family: 'Rubik', sans-serif;  
 }
 
+/* main container given padding */
+#content{
+    padding: 5px;
+    /* padding-top: 4.5rem; */
+}
 /* links yellow */
 a{
-    color: #FFCAB1;
+    color: #e9e9e9;
+    text-decoration: underline;
 }
 a:hover{
-    color: #FF7433;
+    color: #a5a5a5;
+    font-weight: 500;
 }
 
-/* h2 smaller */
+/* navbar */
+nav{
+    background-color: #131313;
+    color: #f3f3f3
+}
+.navPersonalLink{
+    padding: 0px 5px;
+}
+.navPersonalIcon{
+    font-size: 1.4rem;
+    /* color: yellowgreen; */
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.breadcrumb{
+    background-color: transparent;
+    color: #f3f3f3;
+    margin: 0;
+}
+.breadcrumb-item{
+    font-size: 1rem;
+    padding: 0px;
+}
+.breadcrumb-item.active{
+    background-color: transparent;
+    color: yellowgreen;
+    border: 0px;
+    font-weight: 700;
+    padding: 0px;
+}
+.breadcrumb-item.active::before{
+
+    padding: 0px 5px;
+}
+/* footer */
+.footer{
+    width: 100%;
+    background-color: #131313;
+}
+.footerContents{
+    padding:15px;
+    width: 100%;
+}
+
+#footerHeader{
+    font-size: 1.6rem;
+    padding-bottom: 15px;
+    color: yellowgreen;
+}
+.footerLink{
+    padding: 15px;
+}
+.footerIcon{
+    font-size: 2.5rem;
+    color: inherit;
+}
+
+/* front page styling */
+#frontPageH{
+    /* background-color:#131313; */
+    background: rgb(19,19,19);
+    background: linear-gradient(180deg, rgba(19,19,19,1) 75%, rgba(19,19,19,0) 100%);
+}
+.intro{
+    font-weight: 700;
+    /* line-height: 180%; */
+    font-size: 3.5rem;
+}
+
+.myname{
+    /* font-size: 3.5rem; */
+    /* font-weight: 500; */
+    color: yellowgreen;
+}
+
+.fed{
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-size:2.7rem; */
+    /* font-weight: 500; */
+    color: yellowgreen;
+}
+
+.uxd{
+    /* font-family: 'Merriweather', serif; */
+    /* font-size:2.7rem; */
+    /* font-weight: 500; */
+    background-color: rgb(111, 150, 35);
+}
+.subtitle{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 15px;
+    /* color:rgb(175, 176, 255); */
+}
+.note{
+    font-size: 1.6rem;
+    /* font-style: italic; */
+}
+
+/* h2 larger */
 h2{
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+
+/* h3 larger */
+h3{
+
+}
+/* motto font size */
+.motto{
+    font-size: 1rem;
+    padding: 15px 60px 45px 60px;
     font-weight: 300;
-    font-size: 24px;
-}
+    margin:0;
 
-/* tree stuff */
-#tree{
-    width: 10%;
-    vertical-align: baseline;
-}
-.leaf{
-    height: 24px;
-    margin: .7em;
-    vertical-align: baseline;
-}
-
-.goBackTree{
-    height: 1em;
-    vertical-align: baseline;
+    /* font-style: italic; */
 }
 
 .resumeIcon{
     width: 50px;
 }
-/* .pdf{
-    height: 30vh;
-} */
-.btn{
+
+/* button stuff */
+.myButton{
     display:block;
     margin: 15px 0px;
-    color: #e8e8e8;
+    color: white;
+    background-color: transparent;
     border: 1px solid #e8e8e8;
 }
-.btn:hover{
+
+.myButton:hover{
     color: grey;
     border: 1px solid grey;
 }
-
-.projLink{
-    font-size: 20px;
+.active{
+    background-color: #474747;
+    /* color: black; */
+    font-weight: 700;
+    border: 1px solid #6d6d6d;
 }
 
-.frontImg{
-    width: 75%;
+
+/* deco */
+#bottomdeco{
+    float: right;
+    width: 5vw;
+}
+/* frontpage project */
+.proj.card{
+    background-color: rgba(128, 128, 128, 0.212);
+    /* margin: 15px 0px;
+    padding: 15px 0px; */
 }
 
+.proj.card{
+    overflow: hidden;
+}
+.proj.card:hover .frontImg{
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.proj.card:hover{
+    box-shadow: 0px 0px 20px 6px rgba(153, 205, 50, 0.548);
+    z-index: 100;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.card-title{
+    /* padding-left: 15px; */
+    font-size: 1rem;
+}
+
+.skills{
+    color: yellowgreen;
+    font-size: 0.8rem;
+    padding: 15px;
+    margin: 0;
+}
+
+.backtotop{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+/* calculator page */
 .linksList{
     margin: 0;
     padding: 0;
@@ -87,21 +251,13 @@ h2{
     margin: 0px 45px;
 }
 
-.aside{
-    display: block;
-    font-size: 14px;
-    font-style: italic;
-    padding: 5px 0px;
-}
+
 .spaceit{
-    padding: 30px 0px;
+    padding-bottom: 30px;
 }
 
 .padIt{
     padding-top: 15px;
-}
-.withSideP{
-    padding: 0px 15px;
 }
 
 .smallerHeading{
@@ -109,6 +265,17 @@ h2{
 }
 
 /* project pages */
+.headerContents{
+    padding-top:4.5rem;
+}
+.projSubtitle{
+    font-size: 1.3rem;
+}
+
+.emphasis{
+    color:yellowgreen;
+    font-weight: bold;
+}
 .webFrame{
     width: inherit;
     height: 60vh;
@@ -132,9 +299,56 @@ h2{
 }
 
 .referenceImg{
-    max-width: 100px;
+    width: 95%;
+}
+.gifImg{
+    width: 50%;
 }
 
-.screenshotImg{
-    max-height: 300px;
+.vidEmbed{
+    width: 560px;
+    height: 315px;
 }
+
+.introimg{
+    width: 50%;
+    min-width: 20vw;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #content{
+        padding: 20px 50px;
+    }
+    header{
+        padding: 15px;
+    }
+    .card-title{
+        /* padding: 15px 0px; */
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .superEdges{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+
+}
+
+
