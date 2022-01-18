@@ -6,10 +6,10 @@
     <title>Stephanie's Portfolio | Calculators</title>
 
     <!-- bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- favicon -->
-        <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.png">
 
     <!-- stylesheet -->
     <link type="text/css" href="css/indexstyle.css" rel="stylesheet">
@@ -20,17 +20,39 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <a class="sr-only sr-only-focusable" href="#top">Skip to main content</a>
     <a name="top"></a>
     <header>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Calculators</li>
-          </ol>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" aria-label="breadcrumb">
+          <div class="container-fluid">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Calculators</li>
+            </ol>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapser" aria-controls="navbarCollapser" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapser">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item text-end">
+                  <a class="nav-link navPersonalLink" href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="Stephanie's LinkedIn"><i class="fab fa-linkedin navPersonalIcon"></i></a>
+                </li>
+                <li class="nav-item text-end">
+                  <a class="nav-link navPersonalLink" href="https://github.com/choisteph" target=_blank title="Stephanie's Github"><i class="fab fa-github navPersonalIcon"></i></a>
+                </li>
+                <li class="nav-item text-end">
+                  <a class="nav-link navPersonalLink" href="mailto:stchoi@umich.edu" title="send something to Stephanie's Email"><i class="fas fa-envelope navPersonalIcon"></i></a>
+                </li>
+                <li class="nav-item text-end">
+                  <a class="nav-link navPersonalLink" role="button" href="docs/stchoi_resume.pdf" target= _blank
+                download="stchoi_resume" title="download Stephanie's Resume"><i class="fas fa-file-download navPersonalIcon"></i></a>
+                </li>
+              </ul>              
+            </div>
+          </div>
         </nav>
         <!-- <nav class="navbar navbar-expand-lg">
             <ul class="navbar-nav mr-auto ">
@@ -40,7 +62,7 @@
               </li>
             </ul>
           </nav> -->
-          <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="headerContents d-flex flex-column align-items-center justify-content-center">
             <!-- <img class="leaf" src="img/leaf_toright.png" alt=""> -->
             <h1 class="text-center">Calculators</h1>
             <img class="introimg" src="img/CALCS.png" alt="">
@@ -60,7 +82,7 @@
                         <a href="https://levelofcomfort.onrender.com/" title="Level of Comfort Bike Compatibility Calculator" alt="link out to level of comfort" target="_blank">Level of Comfort - Bike Compatibility Index Calculator</a>
                     </div>
 
-                    <ul class="explainCalcs text-left">
+                    <ul class="explainCalcs text-start">
                         <li>
                         Calculates how well roads could potentially accomodate bicycles based on different factors such as traffic and type of road
                         </li>
@@ -74,7 +96,7 @@
                         <!-- <img class="leaf" src="img/leaf_toleft.png" alt=""> -->
                         <a href="https://aadtcalculator.onrender.com/" title="AADT Calculator" alt="link out to AADT Calculator" target="_blank">Annual Average Daily Traffic Calculator</a>
                     </div>
-                    <ul class="explainCalcs text-left">
+                    <ul class="explainCalcs text-start">
                         <li>
                         Calculates an estimate for a road's Annual Average Daily Traffic based on census tract data and different road factors
                         </li>
@@ -89,7 +111,7 @@
                         <a href="https://cdccalc.onrender.com/" title="MI Start Map Calculator" alt="link out to MI Start Map calculator" target="_blank">MI Start Map Risk Level Calculator</a>
                     </div>
 
-                    <ul class="explainCalcs text-left">
+                    <ul class="explainCalcs text-start">
                         <li>
                         Translates between risk levels seen on MI Start Map and the CDC Indicator (the two have different cutoff points for different risk levels!) The calculator was live from <a href="https://mistartmap.info/about#revision-history" title="MI Start Map Revision History" alt="link out to MI Start Map revision history page">July 16, 2021 to August 4, 2021</a>.
                         </li>
@@ -104,7 +126,7 @@
       </div> <!--closes main container-->
     </main>
     <div class="row justify-content-end backtotop">
-      <div class="col-4 text-right">
+      <div class="col-4 text-end">
         <a href="#top" title="back to top">
           &uarr; Back to Top
         </a>
@@ -117,9 +139,9 @@
             <div class="footerContents d-flex flex-column align-items-center justify-content-around">
               <h2 id="footerHeader">Connect with me</h2>
               <div class="footerLinks d-flex align-items-center justify-content-center">
-                <a class="footerLink" href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="stephanie's LinkedIn"><i class="fab fa-linkedin footerIcon"></i></a>
-                <a class="footerLink" href="https://github.com/choisteph" target=_blank title="stephanie's Github"><i class="fab fa-github footerIcon"></i></a>
-                <a class="footerLink" href="mailto:stchoi@umich.edu" title="send something to stephanie's Email"><i class="fas fa-envelope footerIcon"></i></a>
+                <a class="footerLink" href="https://www.linkedin.com/in/stephanie-choi-06a855bb/" target=_blank title="Stephanie's LinkedIn"><i class="fab fa-linkedin footerIcon"></i></a>
+                <a class="footerLink" href="https://github.com/choisteph" target=_blank title="Stephanie's Github"><i class="fab fa-github footerIcon"></i></a>
+                <a class="footerLink" href="mailto:stchoi@umich.edu" title="send something to Stephanie's Email"><i class="fas fa-envelope footerIcon"></i></a>
               </div>
               <button class="btn myButton" role="button" href="docs/stchoi_resume.pdf" target= _blank
                   download="stchoi_resume" name="download" title="download my resume">
@@ -130,8 +152,8 @@
         </div>   
       </div> <!--close container-->
     </footer>
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>  
+      <!-- jquery and bootstrapjs-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
   </body>
 </html>
