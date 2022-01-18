@@ -164,7 +164,7 @@ h3{
     transition: all 0.3s linear;
 }
 .proj.card:hover{
-    box-shadow: 0px 0px 20px 6px rgba(50,205,50,0.68);
+    box-shadow: 0px 0px 20px 6px rgba(153, 205, 50, 0.548);
     z-index: 100;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
