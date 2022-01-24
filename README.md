@@ -2,7 +2,7 @@
 Designed by me unless credited otherwise.
 
 ## Style and Color
-### Colors: Limegreen, Greys, Blacks
+### Colors: Yellowgreen, Greys, Blacks
 <img src="/img/portfolio_resume_styleguide_colors.png" alt="color guide">
 
 ### Typeface: Rubik
