@@ -9,10 +9,11 @@ Designed by me unless credited otherwise.
 <img src="/img/portfolio_resume_styleguide_typeface.png" alt="typeface guide">
 
 ## Asset Credits
-- Computer screen images are free templates provided by and designed by Freepik
-- Icons are provided and designed by FontAwesome
-- Fonts are provided by Google Fonts
-- Site framework designed by Bootstrap
+- Computer screen images are templates provided by and designed by [Freepik](https://www.freepik.com/)
+- Icons are provided and designed by [FontAwesome](https://fontawesome.com/)
+- Fonts are provided by [Google Fonts](https://fonts.google.com/)
+- Site framework is designed by [Bootstrap](https://getbootstrap.com/)
+- Favicon uses the Gilbeot Typeface in Rainbow colors, a typeface created by the [Gilbeot Project](http://rainbowfoundation.co.kr/Gilbeot_eng) &#127987; 
 
 ## Referenced Code
 - [Refreshing iframes on window resize](https://stackoverflow.com/questions/14138838/refresh-selected-iframes-on-browser-resize/48998304)
