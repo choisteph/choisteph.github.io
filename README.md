@@ -13,7 +13,7 @@ Designed by me unless credited otherwise.
 - Icons are provided and designed by [FontAwesome](https://fontawesome.com/)
 - Fonts are provided by [Google Fonts](https://fonts.google.com/)
 - Site framework is designed by [Bootstrap](https://getbootstrap.com/)
-- Favicon uses the Gilbeot Typeface in Rainbow colors, a typeface created by the [Gilbeot Project](http://rainbowfoundation.co.kr/Gilbeot_eng) &#127987; 
+- Favicon uses the Gilbeot Typeface in Rainbow colors, a typeface created by the [Gilbeot Project](http://rainbowfoundation.co.kr/Gilbeot_eng)
 
 ## Referenced Code
 - [Refreshing iframes on window resize](https://stackoverflow.com/questions/14138838/refresh-selected-iframes-on-browser-resize/48998304)
