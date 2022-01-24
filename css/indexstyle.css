@@ -85,6 +85,9 @@ nav{
     font-size: 2.5rem;
     color: inherit;
 }
+.footnote{
+    font-size: 0.6rem;
+}
 
 /* front page styling */
 #frontPageH{
