@@ -190,7 +190,7 @@ h3{
     padding: 15px 0px; */
 }
 
-.proj.card{
+.frontImgContainer{
     overflow: hidden;
 }
 .proj.card:hover .frontImg{
