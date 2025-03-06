@@ -26,46 +26,14 @@
     <a class="sr-only sr-only-focusable" href="#top">Skip to main content</a>
     <a name="top"></a>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" aria-label="breadcrumb">
-          <div class="container-fluid">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Calculators</li>
-            </ol>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapser" aria-controls="navbarCollapser" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapser">
-              <ul class="navbar-nav ms-auto mb-lg-0">
-                <li class="nav-item text-end">
-                  <a class="nav-link navPersonalLink" href="https://www.linkedin.com/in/stephjchoi/" target=_blank title="Stephanie's LinkedIn"><i class="fab fa-linkedin navPersonalIcon"></i></a>
-                </li>
-                <li class="nav-item text-end">
-                  <a class="nav-link navPersonalLink" href="https://github.com/choisteph" target=_blank title="Stephanie's Github"><i class="fab fa-github navPersonalIcon"></i></a>
-                </li>
-                <li class="nav-item text-end">
-                  <a class="nav-link navPersonalLink" href="mailto:stchoi@umich.edu" title="send something to Stephanie's Email"><i class="fas fa-envelope navPersonalIcon"></i></a>
-                </li>
-              </ul>              
-            </div>
-          </div>
-        </nav>
-        <!-- <nav class="navbar navbar-expand-lg">
-            <ul class="navbar-nav mr-auto ">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">&#8592; Go Back
-                </a>
-              </li>
-            </ul>
-          </nav> -->
-          <div class="headerContents d-flex flex-column align-items-center justify-content-center">
-            <!-- <img class="leaf" src="img/leaf_toright.png" alt=""> -->
-            <h1 class="text-center">Calculators</h1>
-            <img class="introimg" src="img/CALCS.png" alt="">
-            <!-- <img class="leaf" src="img/leaf x_toleft.png" alt=""> -->
-          </div>
-          <h2 class="projSubtitle text-center">Various Calculator Designs</h2>
-          <p class="text-center">2019 - 2021</p>
+        <div class="headerContents d-flex flex-column align-items-center justify-content-center">
+          <!-- <img class="leaf" src="img/leaf_toright.png" alt=""> -->
+          <h1 class="text-center">Calculators</h1>
+          <img class="introimg" src="img/CALCS.png" alt="">
+          <!-- <img class="leaf" src="img/leaf x_toleft.png" alt=""> -->
+        </div>
+        <h2 class="projSubtitle text-center">Various Calculator Designs</h2>
+        <p class="text-center">2019 - 2021</p>
     </header>
     <main>
       <div class="container-fluid" id="content" tabindex="-1">
@@ -129,24 +97,19 @@
       </div>
     </div> 
     <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="footerContents d-flex flex-column align-items-center justify-content-around">
-              <h2 id="footerHeader">Connect with me</h2>
-              <div class="footerLinks d-flex align-items-center justify-content-center">
-                <a class="footerLink" href="https://www.linkedin.com/in/stephjchoi/" target=_blank title="Stephanie's LinkedIn"><i class="fab fa-linkedin footerIcon"></i></a>
-                <a class="footerLink" href="https://github.com/choisteph" target=_blank title="Stephanie's Github"><i class="fab fa-github footerIcon"></i></a>
-                <a class="footerLink" href="mailto:stchoi@umich.edu" title="send something to Stephanie's Email"><i class="fas fa-envelope footerIcon"></i></a>
-              </div>
-              <a class="footnote" href="https://github.com/choisteph/choisteph.github.io#readme" target=_blank title="go to README for details">Designed by Stephanie Choi</a>                
-            </div>
-          </div>
-        </div>   
-      </div> <!--close container-->
     </footer>
       <!-- jquery and bootstrapjs-->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
-  </body>
+      <!-- generate header -->
+       <script src="js/header.js"></script>
+       <script>
+          generateHeader('Calculators');
+       </script>
+      <!-- generate footer -->
+      <script src="js/footer.js"></script>
+      <script>
+          generateFooter();
+      </script>       
+    </body>
 </html>
