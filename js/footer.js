@@ -21,5 +21,3 @@ const generateFooter = () => {
   `
     document.querySelector('footer').append(footerTemplate.content);
 };
-
-
