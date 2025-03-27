@@ -147,7 +147,8 @@ nav {
 }
 
 .note {
-    font-size: 1.6rem;
+    font-size: 1rem;
+    font-weight: 300;
     /* font-style: italic; */
 }
 
@@ -346,6 +347,28 @@ h2 {
 .introimg {
     width: 50%;
     min-width: 20vw;
+}
+
+#steph-character {
+    max-width: 300px;
+}
+
+.aside {
+    font-size: 12px;
+}
+
+.proj-head {
+    font-size: 28px;
+}
+
+.proj-subhead {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.proj-img {
+    max-width: 350px;
+    padding: 5px 0;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

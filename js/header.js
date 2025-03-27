@@ -21,7 +21,7 @@ const generateHeader = (currentPage) => {
               <a class="nav-link navPersonalLink" href="https://github.com/choisteph" target=_blank title="Stephanie's Github"><i class="fab fa-github navPersonalIcon"></i></a>
             </li>
             <li class="nav-item text-end">
-              <a class="nav-link navPersonalLink" href="mailto:stchoi@umich.edu" title="send something to Stephanie's Email"><i class="fas fa-envelope navPersonalIcon"></i></a>
+              <a class="nav-link navPersonalLink" href="mailto:stephjchoi@gmail.com" title="send something to Stephanie's Email"><i class="fas fa-envelope navPersonalIcon"></i></a>
             </li>
           </ul>              
         </div>
