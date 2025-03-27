@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stephanie's Portfolio | MI COVID Mapping</title>
+
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- favicon -->
+        <link rel="icon" href="img/favicon.png">
+
+    <!-- stylesheet -->
+    <link type="text/css" href="css/indexstyle.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  </head>
+  <body>
+    <a href="#top" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    <a name="top"></a>
+    <header>
+        <div class="headerContents d-flex align-items-center justify-content-center">
+          <h1>Wait Who?</h1>
+        </div>
+    </header>
+    <main>
+      <div class="container" id="content" tabindex="-1">
+          <div class="row">
+                <div class="col-md-6 col-sm-12 p-2 d-flex justify-content-center align-items-center">
+                    <img id="steph-character" src="img/st_char_cr.png" alt="a cartoon representation of stephanie. character wears brown rectangular glasses, a white shirt with a red heart patch on the chest, and blue jeans. the character has long black hair and its hands are on its hips."/>
+                </div>
+                <div class="col-md-6 col-sm-12 p-2 d-flex flex-column align-items-center justify-content-center">
+                    <p>Hey there! My name is Stephanie and I'm a UX Writer, Designer, and Frontend Engineer. My career journey has been filled with different twists and turns but everything seems to point towards content creation. If you're looking for someone with grit and a vision, look no further: she's right here!</p>
+                    <p>I have 5+ years of experience working as a frontend and UI engineer and 7+ years <a href="https://lrclangbank.wordpress.com/2015/07/09/about-the-language-bank/" target="_blank">writing</a>, <a href="docs/LangbankFlyer20162017.pdf" target="_blank" >designing</a> <a href="docs/justfutures_styleguide.pdf" target="_blank">marketing</a> materials, and <a href="https://hello-japan-vn.com/" target="_blank">illustrating</a>.</p>
+                    <p>Whether it's through tackling the <a href="modules.html#morphing" target="_blank">funkiest SVG manipulation APIs</a>, writing an extremely <a href="https://github.com/choisteph/epimath_flex/blob/master/README.md" target="_blank">detailed</a> <a href="https://github.com/choisteph/SOSFlaskDashboard/blob/master/README.md" target="_blank">README</a>, or wondering why in the world I can't draw a <a href="sosdash.html#lofi" target="_blank">straight line</a> in Photoshop, I find a way to persevere and deliver quality content to my clients.</p>
+                    <p class="aside">...& If you'd like to read my poetry, please reach out! Would love to share. (connect links are below)</p>
+                </div>
+          </div> <!--close row-->
+      </div> <!--closes main container-->    
+    </main>
+    <div class="row justify-content-end backtotop">
+      <div class="col-4 text-end">
+        <a href="#top" title="back to top">
+          &uarr; Back to Top
+        </a>
+      </div>
+    </div> 
+    <footer class="footer fixed-bottom">
+    </footer>
+    <!-- jquery and bootstrapjs-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    <script>
+      $(window).resize(function(){
+        $('#covmap').attr('src', $('#covmap').attr('src'));
+      })
+    </script>
+    <!-- generate header -->
+    <script src="js/header.js"></script>
+    <script>
+        generateHeader('About Me');
+    </script>
+    <!-- generate footer -->
+    <script src="js/footer.js"></script>
+    <script>
+        generateFooter();
+    </script>    
+  </body>
+</html>
