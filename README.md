@@ -38,5 +38,5 @@ The next functionalities and features I want to implement are:
 2. A light mode to dark mode toggle (will this even be possible with a static site?)
 3. Content reassessments: add additional content, remove existing content
 
-   ---
-   If you've made it this far, thank you so much for reading. I hope this gives you some extra information about my thought process!
+---
+If you've made it this far, thank you so much for reading. I hope this gives you some extra information about my thought process!
