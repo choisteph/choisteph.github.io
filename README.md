@@ -7,6 +7,7 @@ I developed a simple static portfolio website using Vite + React + Typescript to
 - The [gh-pages](https://github.com/gitname/react-gh-pages) documentation for deploying a React application to Github Pages
 - [Vite's documentation](https://vite.dev/guide/static-deploy.html) on how to deploy a React application created with Vite
   - Thank you also to various StackOverflow and Reddit threads for directing me to this resource!
+- The [StackOverflow thread](https://stackoverflow.com/questions/9719434/picking-2-random-elements-from-array) on selecting 2 random elements from an array. (*Yes, I could have figured this out myself but I chose to rely on the great minds before me this time around.*)
 - [Emojipedia's](https://emojipedia.org/) emoji entities for easy copy and pasting into my portfolio
 - The online, free [CSS Gradient tool](https://cssgradient.io/) to create that cool little blue-green donut on the home page
 - The incredibly talented designers who shared their portfolios on [Product Design Portfolios](https://www.productdesignportfolios.com/)
@@ -24,7 +25,7 @@ In this revamp, I also simplified how I represent my projects: previously, I inc
 I also chose to highlight slightly different projects compared to the ones from my previous portfolio. My goal was to try to represent a range of different kinds of work I've done, as my path has been very non-linear.
 
 ### On Adding an About Me Section
-I also added a fresh little "about" section with my design philosophy, soome certifications I earned, and a list of competencies and tools I use as a professional. I wanted to offer a bit more context about the way I think, the things I'm working on, and the different things I've learned in my 5+ years trying to navigate this space.
+I also added a fresh little "about" section with my design philosophy, some certifications I earned, and a list of competencies and tools I use as a professional. I wanted to offer a bit more context about the way I think, the things I'm working on, and the different things I've learned in my 5+ years trying to navigate this space.
 
 ### To Summarize,
 **My goal with this redesign was to:**
