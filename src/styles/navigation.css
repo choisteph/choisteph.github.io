@@ -1,0 +1,19 @@
+nav {
+    padding: 2rem;
+}
+
+nav > * {
+    font-size: 1em;
+    padding: 0 10px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  nav > span {
+    padding: 0;
+  }
+  
+  nav > *:hover {
+    color: black;
+    text-decoration: underline;
+  }

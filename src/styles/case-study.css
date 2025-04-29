@@ -1,0 +1,31 @@
+/* case study */
+.case-study {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 15px 0;
+  }
+
+  .case-study--title {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .case-study--title:hover {
+    font-style: italic;
+  }
+  .case-study--img {
+   max-width: 250px;
+  }
+
+  .case-study--decorative-box {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    background: rgba(78, 130, 194, 0.5);
+    background: radial-gradient(circle,rgba(78, 130, 194, 0.5) 20%, rgba(87, 199, 133, 0.5) 60%, rgba(255, 255, 255, 0.5) 100%);
+  }

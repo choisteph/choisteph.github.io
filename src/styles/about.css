@@ -1,0 +1,33 @@
+.skill-section {
+    padding-bottom: 2rem;
+}
+
+.skill-group > div {
+    padding: 10px 0;
+}
+
+.skill-list {
+    padding-left: 15px;
+}
+
+h2, h3 {
+    margin-bottom: 0;
+}
+
+section {
+    padding: 0 2rem;
+}
+
+.personal-details {
+    background-color: beige;
+    padding: 2rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .skill-group {
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
