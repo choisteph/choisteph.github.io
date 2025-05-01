@@ -4,13 +4,13 @@ import "../styles/navigation.css";
 export default function Navigation() {
   return (
     <nav className="navigation">
-      <span>//</span>
+      <span className="decoration">//</span>
       <Link to="/">home</Link>
-      <span>//</span>
-      <Link to="/projects">projects</Link>
-      <span>//</span>
+      <span className="decoration">//</span>
+      <Link to="/projects">featured projects</Link>
+      <span className="decoration">//</span>
       <Link to="/about">about</Link>
-      <span>//</span>
+      <span className="decoration">//</span>
     </nav>
   );
 }

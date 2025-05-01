@@ -6,12 +6,13 @@ export type ProjectQuickProps = {
   projectName: string;
   projectDetails: string;
   projectDeckLink: string;
+  projectCompetencies: string[];
+  projectImg?: string;
 };
 
 export type Project = ProjectQuickProps & {
-  projectCompetencies: string[];
   isPdf?: boolean;
-  projectEmoji: string;
+  projectEmoji?: string;
 };
 
 export default function Project({
@@ -20,12 +21,13 @@ export default function Project({
   projectCompetencies,
   projectDeckLink,
   isPdf,
-  projectEmoji,
+  projectImg,
 }: Project) {
   return (
     <div className="project">
       <div className="project-label">
-        <span className="project-emoji">{projectEmoji}</span>
+        {/* <span className="project-emoji">{projectEmoji}</span> */}]
+        <img className="project-img" src={projectImg} />
         <h2 className="project-name">{projectName}</h2>
       </div>
       <div className="project-competencies">

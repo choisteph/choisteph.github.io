@@ -27,10 +27,6 @@
     gap: 10px;
 }
 
-.project-link {
-    color: black;
-}
-
-.project-link:hover {
-    font-style: italic;
+.project-img {
+    max-width: 500px;
 }

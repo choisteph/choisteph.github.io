@@ -3,7 +3,7 @@ nav {
 }
 
 nav > * {
-    font-size: 1em;
+    font-size: 1.5rem;
     padding: 0 10px;
     color: black;
     text-decoration: none;
@@ -11,9 +11,14 @@ nav > * {
   
   nav > span {
     padding: 0;
+    font-size: 1.5rem;
   }
   
-  nav > *:hover {
+  nav > *:not(.decoration):hover {
     color: black;
     text-decoration: underline;
   }
+
+  /* for larger than phone screen views */
+@media only screen and (min-width: 600px) {
+}

@@ -1,9 +1,11 @@
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   height: 100%;
+  width: 100%;
 }
 
 div#root {
@@ -13,10 +15,12 @@ div#root {
 
 div.app {
   height: 100%;
-}
+  width: 100%;
+} 
 
 :root {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light;
@@ -29,10 +33,14 @@ div.app {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../src/assets/background-img.svg');
+  background-repeat: repeat-y;
+  background-position-x: right;
+  background-size: contain;
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   padding: 0;
   display: flex;
@@ -40,8 +48,6 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   min-width: 320px;
-  /* background: #4e82c2;
-  background: linear-gradient(0deg,rgba(78, 130, 194, 0.5) 0%, rgba(87, 199, 133, 0.5) 30%, rgba(255, 255, 255, 0) 60%); */
 }
 
 body {
@@ -49,31 +55,9 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3.5rem;
   line-height: 1.1;
   text-align: left;
-}
-
-button {
-  border-radius: 15px;
-  border: 2px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  color: white;
-  background-color: #1489a7;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #89ffbe;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 /* undecorated list */
@@ -85,7 +69,43 @@ button:focus-visible {
   list-style: none;
 }
 
-@media (prefers-color-scheme: light) {
+/* specially decorated list */
+.specially-marked-list {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.specially-marked-list > li::before {
+  content: " ";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('../src/assets/custom-marker.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 15px;
+}
+
+/* tagline */
+.tagline {
+  margin: 0;
+  font-family: "Neuton", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  width: fit-content;
+}
+
+.tagline:after {
+  display: block;
+  width: 100%;
+  content: ' ';
+  padding-top: 15px;
+  border-bottom: 5px solid #d2a580;
+}
+
+
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -95,5 +115,11 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 2rem;
   }
 }

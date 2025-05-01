@@ -1,31 +1,74 @@
-.skill-section {
+@import "react-slideshow-image/dist/styles.css";
+
+.about--section > h2, h3 {
+    margin: 0;
+}
+
+.about--design-phil-section {
+    font-size: 1.6rem;
+    background-color: white;
     padding-bottom: 2rem;
 }
 
-.skill-group > div {
-    padding: 10px 0;
+.about--design-phil-section > p {
+    margin: 0;
 }
 
-.skill-list {
+.about--tagline:after {
+    display: block;
+    content: ' ';
+    padding-top: 15px;
+    border-bottom: 5px solid #d2a580;
+}
+.about--section:not(:first-child) {
+    padding-bottom: 1rem;
+}
+
+.about--skill-section {
+    padding-bottom: 2rem;
+}
+
+.about--skill-group:not(:last-child) {
+    padding-bottom: 2rem;
+}
+
+.about--skill-list {
     padding-left: 15px;
-}
-
-h2, h3 {
-    margin-bottom: 0;
 }
 
 section {
     padding: 0 2rem;
 }
 
-.personal-details {
-    background-color: beige;
-    padding: 2rem;
+.about--personal-details-section {
+    padding-bottom: 2rem;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .skill-group {
+.about--personal-details {
+    display: flex;
+    background-color: beige;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 15px;
+    align-items: center;
+    /* background-image: url('../assets/corner-decorator.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 10%; */
+    /* border-bottom: 5px solid rgba(167, 124, 89, 0.6);
+    border-right: 5px solid rgba(167, 124, 89, 0.6); */
+}
+
+.slide-container {
+    width: 400px;
+}
+.about--personal-details-photo {
+    max-width: 400px;
+}
+
+@media only screen and (min-width: 600px) {
+    .about--skill-group {
         max-width: 800px;
         display: flex;
         justify-content: space-between;

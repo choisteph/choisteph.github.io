@@ -1,11 +1,22 @@
 .skillpill {
     width: fit-content;
-    border: 1px solid rgb(170, 170, 117);
-    background-color: beige;
+    /* border: 1px solid rgb(170, 170, 117);
+    background-color: beige; */
+    color: black;
+    border-bottom: 5px solid #d2a580;
+    border-right: 5px solid #d2a580;
+    background-color: white;
+    padding: 4px;
     border-radius: 15px;
 }
 
-span {
-    font-size: 0.8rem;
-    padding: 8px;
+.skillpill > span {
+    font-size: 1rem;
+    padding: 10px;
 }
+
+
+/* for larger than phone screen views */
+@media only screen and (max-width: 600px) {
+
+  }
