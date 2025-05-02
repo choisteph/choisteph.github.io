@@ -1,4 +1,4 @@
-import { type ProjectQuickProps } from "./Project";
+import { type ProjectProps } from "./Project";
 import "../styles/case-study.css";
 import { Link } from "react-router-dom";
 import SkillPill from "./SkillPill";
@@ -9,7 +9,7 @@ export default function CaseStudy({
   projectDeckLink,
   projectCompetencies,
   projectImg,
-}: ProjectQuickProps) {
+}: ProjectProps) {
   return (
     <div className="case-study-wrapper">
       <div className="case-study">

@@ -1,8 +1,7 @@
 import CaseStudy from "./CaseStudy";
 import "../styles/home.css";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { projectList, type FeaturedProjects } from "./Projects";
+import { projectList } from "./Projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -13,20 +12,6 @@ import FeaturedSkill from "./FeaturedSkill";
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
-  const copyOfProjectList = [...projectList];
-
-  const [twoFeaturedProjects, setTwoFeaturedProjects] = useState(
-    copyOfProjectList.slice(0, 2)
-  );
-
-  // const grabRandomArrayItems = (arr: FeaturedProjects) => {
-  //   return arr.sort(() => 0.5 - Math.random()).slice(0, 2);
-  // };
-
-  // useEffect(() => {
-  //   setTwoFeaturedProjects(() => grabRandomArrayItems(copyOfProjectList));
-  // }, []);
-
   return (
     <div className="home page-fade-in">
       <p className="tagline">Hello, I'm Stephanie!</p>
@@ -35,9 +20,6 @@ export default function Home() {
         research.
       </h1>
       <div className="home--proficiency-section">
-        {/* <div className="home--title-section">
-          <h2>Skills that set me apart:</h2>
-        </div> */}
         <div className="home--special-skills-section">
           <FeaturedSkill icon={faAngular} description="Proficient in Angular" />
           <FeaturedSkill icon={faReact} description="Proficient in React" />
@@ -48,7 +30,7 @@ export default function Home() {
         </div>
       </div>
       <div className="home--project-previews">
-        {twoFeaturedProjects.map((proj, idx) => (
+        {projectList.map((proj, idx) => (
           <CaseStudy
             key={idx}
             projectName={proj.projectName}

@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 import SkillPill from "./SkillPill";
 import "../styles/project.css";
 
-export type ProjectQuickProps = {
+export type ProjectProps = {
   projectName: string;
   projectDetails: string;
   projectDeckLink: string;
@@ -10,23 +9,15 @@ export type ProjectQuickProps = {
   projectImg?: string;
 };
 
-export type Project = ProjectQuickProps & {
-  isPdf?: boolean;
-  projectEmoji?: string;
-};
-
 export default function Project({
   projectName,
   projectDetails,
   projectCompetencies,
-  projectDeckLink,
-  isPdf,
   projectImg,
-}: Project) {
+}: ProjectProps) {
   return (
     <div className="project">
       <div className="project-label">
-        {/* <span className="project-emoji">{projectEmoji}</span> */}]
         <img className="project-img" src={projectImg} />
         <h2 className="project-name">{projectName}</h2>
       </div>
@@ -36,15 +27,6 @@ export default function Project({
         ))}
       </div>
       <p>{projectDetails}</p>
-      {isPdf ? (
-        <a href={projectDeckLink} target="_blank" className="project-link">
-          Go To Project Document &#8599;
-        </a>
-      ) : (
-        <Link to={projectDeckLink} target="_blank" className="project-link">
-          Go To Project Deck &#8599;
-        </Link>
-      )}
     </div>
   );
 }
