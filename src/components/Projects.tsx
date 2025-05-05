@@ -2,6 +2,7 @@ import "../styles/projects.css";
 import { type ProjectProps } from "./Project";
 import teoknImg from "../assets/teokn.png";
 import covidmappingImg from "../assets/covidmapping.png";
+import sosImg from "../assets/sosdash.png";
 import CaseStudy from "./CaseStudy";
 
 export type FeaturedProjects = ProjectProps[];
@@ -10,7 +11,12 @@ export const projectList: FeaturedProjects = [
   {
     projectName: "TEOKN - Transportation Open Knowledge Network",
     projectDetails: "Designing equitable access to transportation data.",
-    projectCompetencies: ["figma", "ui/ux design", "public policy"],
+    projectCompetencies: [
+      "figma",
+      "end-to-end ",
+      "ui/ux design",
+      "public policy",
+    ],
     projectDeckLink:
       "https://pitch.com/v/teokn-transportation-open-knowledge-network-6dktyz",
     projectImg: teoknImg,
@@ -25,6 +31,20 @@ export const projectList: FeaturedProjects = [
     ],
     projectDeckLink: "https://pitch.com/v/covid-19-mapping-ukjy96",
     projectImg: covidmappingImg,
+  },
+  {
+    projectName: "SOS - System for Opioid Overdose Surveillance",
+    projectDetails:
+      "Designing Michigan's first opioid overdose data dashboard.",
+    projectCompetencies: [
+      "adobe xd",
+      "end-to-end",
+      "design + R&D",
+      "healthcare policy",
+    ],
+    projectDeckLink:
+      "https://pitch.com/v/sos-system-for-opioid-overdose-surveillance-3zwf25",
+    projectImg: sosImg,
   },
 ];
 
