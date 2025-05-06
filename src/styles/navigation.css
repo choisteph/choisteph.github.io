@@ -19,6 +19,6 @@ nav > * {
     text-decoration: underline;
   }
 
-  /* for larger than phone screen views */
-@media only screen and (min-width: 600px) {
+/* for smaller views */
+@media (max-width: 900px) {
 }

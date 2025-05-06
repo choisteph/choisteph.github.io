@@ -5,3 +5,10 @@
 .projects--project-container {
     padding-bottom: 2rem;
 }
+
+/* for smaller views */
+@media (max-width: 900px) {
+    .projects {
+        padding: 2rem;
+    }
+  }
