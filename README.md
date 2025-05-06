@@ -9,10 +9,10 @@ _The development of my portfolio remains iterative and constantly changing! Chec
 - The [gh-pages](https://github.com/gitname/react-gh-pages) documentation for deploying a React application to Github Pages
 - [Vite's documentation](https://vite.dev/guide/static-deploy.html) on how to deploy a React application created with Vite
   - Thank you also to various StackOverflow and Reddit threads for directing me to this resource!
-- The [StackOverflow thread](https://stackoverflow.com/questions/9719434/picking-2-random-elements-from-array) on selecting 2 random elements from an array. (_Yes, I could have figured this out myself but I chose to rely on the great minds before me this time around._)
 - [FontAwesome's documentation](https://docs.fontawesome.com/web/use-with/react) on using FontAwesome icons with React
-- [Emojipedia's](https://emojipedia.org/) emoji entities for easy copy and pasting into my portfolio
-- The online, free [CSS Gradient tool](https://cssgradient.io/) to create that cool little blue-green donut on the home page
+- [Google Fonts](https://fonts.google.com/) for custom typography
+- [React Slideshow](https://github.com/femioladeji/react-slideshow) for a small image reel on my About page
+- Free laptop mockups found on [Unblast](https://unblast.com/mockups/laptops/)
 - The incredibly talented designers who shared their portfolios on [Product Design Portfolios](https://www.productdesignportfolios.com/)
 
 ## Design Rationale
@@ -21,15 +21,13 @@ _The development of my portfolio remains iterative and constantly changing! Chec
 
 If you have seen my [previous portfolio](https://github.com/choisteph/old_portfolio), you can hopefully see that this new and updated portfolio follows a very different mood and color schema. I previously used darker colors and primarily a limegreen-centered color palette because I felt this was very "tech-y" and looked a lot like common text-editor colors. I decided to switch it up with my new design, using brighter colors to convey a more approachable and positive mood.
 
-### On Streamlining my Home Page and Adding (Rotating) Featured Projects
+### On Updating the Home Page
 
-I also highly simplified the home page, choosing instead to feature a brief by-line and two randomly picked featured projects (thank you React `useState` and `useEffect` hooks!). I figured that the previous iteration of my porfolio was cluttered and cumbersome and this revamp would streamline visitors' access to relevant projects and information about myself.
+I wanted to use interesting typography, colors, and "motion" to make my home page immediately interesting. I chose to put a small set of interesting skills (engineering and technical writing) that set me apart as a designer. For my projects, I used tags to describe proficiencies, tools, and industry to help immediately contextualize projects.
 
-### On Simplifying and Changing My List of Projects
+#### The Project List
 
-In this revamp, I also simplified how I represent my projects: previously, I included a busy image of the project on a laptop screen. I chose instead to rely on emojis to offer a fun and approachable visual "summary" of the project. Overall I think the redesign makes it easier to see at a glance the kind of work I've done.
-
-I also chose to highlight slightly different projects compared to the ones from my previous portfolio. My goal was to try to represent a range of different kinds of work I've done, as my path has been very non-linear.
+I kept my project list short (3 projects total) so each project would be "important" enough to click through on. I chose projects where I was the most heavily involved with either design or development work so each slide deck would have substantial amounts of content.
 
 ### On Adding an About Me Section
 
