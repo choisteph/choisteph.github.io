@@ -16,7 +16,7 @@
 
 
 /* for smaller views */
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
     .skillpill > span {
         font-size: 0.8rem;
     }
