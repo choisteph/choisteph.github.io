@@ -37,6 +37,14 @@
   padding: 0 2rem;
 }
 
+.home--project-previews {
+  width: 100%;
+}
+
+.home--project-previews > * {
+  max-width: 1420px;
+}
+
 .home--contact-info {
   display: flex;
   justify-content: center;

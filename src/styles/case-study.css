@@ -5,8 +5,9 @@
   padding: 15px;
   gap: 15px;
   border-radius: 15px;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   background-color: #f5f5dc;
+  max-width: 1420px;
 }
 
 .case-study--title {
@@ -64,6 +65,12 @@
   background-size: 5%;
 } */
 
+.case-study-wrapper {
+  display: block;
+  height: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+}
 
 /* for smaller views */
 @media (max-width: 1080px) {
