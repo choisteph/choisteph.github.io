@@ -4,6 +4,8 @@ import teoknImg from "../assets/teokn.png";
 import covidmappingImg from "../assets/covidmapping.png";
 import sosImg from "../assets/sosdash.png";
 import CaseStudy from "./CaseStudy";
+import { motion } from "motion/react";
+import { type RouteTransitionProps } from "../App";
 
 export type FeaturedProjects = ProjectProps[];
 
@@ -48,9 +50,20 @@ export const projectList: FeaturedProjects = [
   },
 ];
 
-export default function Projects() {
+export default function Projects({
+  initial,
+  exit,
+  animate,
+  ...props
+}: RouteTransitionProps) {
   return (
-    <div className="projects page-fade-in">
+    <motion.div
+      initial={initial}
+      animate={animate}
+      exit={exit}
+      {...props}
+      className="projects page-fade-in"
+    >
       <p className="tagline">A curated selection of work.</p>
       <h1>Featured Projects</h1>
       <div className="projects--project-container">
@@ -65,6 +78,6 @@ export default function Projects() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

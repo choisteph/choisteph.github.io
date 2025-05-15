@@ -4,6 +4,8 @@ import california from "../assets/california.png";
 import california2 from "../assets/california-2.png";
 import california3 from "../assets/california-3.png";
 import { Slide } from "react-slideshow-image";
+import { motion } from "motion/react";
+import { type RouteTransitionProps } from "../App";
 
 type CertificationsData = {
   certName: string;
@@ -77,9 +79,20 @@ const slideImages: SlideProps[] = [
   { slideUrl: california3 },
 ];
 
-export default function About() {
+export default function About({
+  initial,
+  exit,
+  animate,
+  ...props
+}: RouteTransitionProps) {
   return (
-    <div className="about page-fade-in">
+    <motion.div
+      initial={initial}
+      animate={animate}
+      exit={exit}
+      {...props}
+      className="about page-fade-in"
+    >
       <section className="about--section">
         <p className="tagline">Good design is easy to understand.</p>
         <h1>Design Philosophy</h1>
@@ -151,6 +164,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }

@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/navigation.css";
 
 export default function Navigation() {
   return (
     <nav className="navigation">
       <span className="decoration">//</span>
-      <Link to="/">home</Link>
+      <NavLink to="/">home</NavLink>
       <span className="decoration">//</span>
-      <Link to="/projects">featured projects</Link>
+      <NavLink to="/projects">featured projects</NavLink>
       <span className="decoration">//</span>
-      <Link to="/about">about</Link>
+      <NavLink to="/about">about</NavLink>
       <span className="decoration">//</span>
     </nav>
   );

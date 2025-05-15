@@ -12,6 +12,7 @@ _The development of my portfolio remains iterative and constantly changing! Chec
 - [FontAwesome's documentation](https://docs.fontawesome.com/web/use-with/react) on using FontAwesome icons with React
 - [Google Fonts](https://fonts.google.com/) for custom typography
 - [React Slideshow](https://github.com/femioladeji/react-slideshow) for a small image reel on my About page
+- [Motion tutorial](https://www.freecodecamp.org/news/improve-user-experience-in-react-by-animating-routes-using-framer-motion/) for page-to-page animations
 - Free laptop mockups found on [Unblast](https://unblast.com/mockups/laptops/)
 - The incredibly talented designers who shared their portfolios on [Product Design Portfolios](https://www.productdesignportfolios.com/)
 

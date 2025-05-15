@@ -10,10 +10,23 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import FeaturedSkill from "./FeaturedSkill";
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "motion/react";
+import { type RouteTransitionProps } from "../App";
 
-export default function Home() {
+export default function Home({
+  initial,
+  exit,
+  animate,
+  ...props
+}: RouteTransitionProps) {
   return (
-    <div className="home page-fade-in">
+    <motion.div
+      initial={initial}
+      animate={animate}
+      exit={exit}
+      {...props}
+      className="home page-fade-in"
+    >
       <p className="tagline">Hello, I'm Stephanie!</p>
       <h1>
         I'm a product designer with a background in engineering and user
@@ -57,6 +70,6 @@ export default function Home() {
           .
         </h3>
       </div>
-    </div>
+    </motion.div>
   );
 }
