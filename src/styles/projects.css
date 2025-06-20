@@ -9,6 +9,6 @@
 /* for smaller views */
 @media (max-width: 1080px) {
     .projects {
-        padding: 2rem;
+        /* padding: 2rem; */
     }
   }

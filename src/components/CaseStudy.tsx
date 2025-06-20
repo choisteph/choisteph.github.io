@@ -6,6 +6,7 @@ import SkillPill from "./SkillPill";
 export default function CaseStudy({
   projectName,
   projectDetails,
+  projectSummary,
   projectDeckLink,
   projectCompetencies,
   projectImg,
@@ -20,19 +21,22 @@ export default function CaseStudy({
         )}
         <div className="case-study--details">
           <h3 className="case-study--title">{projectName}</h3>
-          <p>{projectDetails}</p>
+          <h4>{projectDetails}</h4>
+          <p>{projectSummary}</p>
           <div className="case-study--skill-pills">
             {projectCompetencies.map((skill, idx) => (
               <SkillPill key={idx} skillName={skill} />
             ))}
           </div>
-          <Link
-            to={projectDeckLink}
-            target="_blank"
-            className="case-study--project-link"
-          >
-            Go to Project Deck &#8599;
-          </Link>
+          <div className="case-study--deck-div">
+            <Link
+              to={projectDeckLink}
+              target="_blank"
+              className="case-study--project-link"
+            >
+              Go to Project Deck &#8599;
+            </Link>
+          </div>
         </div>
       </div>
     </div>

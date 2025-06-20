@@ -6,7 +6,16 @@
     align-items: center;
 }
 
+.featuredskill > p {
+    text-align: center;
+}
+
 .featuredskill--icon {
     color: #d2a580;
     font-size: 4em;
 }
+
+.featuredskill--icon--hovered {
+    transform: rotate(45deg);
+}
+

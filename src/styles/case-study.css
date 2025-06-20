@@ -22,6 +22,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .case-study--projectImg {
@@ -34,9 +36,17 @@
   display: flex;
   gap: 10px;
   padding-bottom: 1rem;
+  flex-wrap: wrap;
+
+}
+
+.case-study--deck-div {
+  display: block;
+  height: 45px; /* hard-coded button height */
 }
 
 .case-study--project-link {
+  position: absolute;
   font-size: 1rem;
   background: rgba(210, 165, 128, 0.6);
   color: black;
@@ -54,7 +64,7 @@
   text-decoration: underline;
   border-bottom: 2px solid #886345;
   border-right: 2px solid #886345;
-  transform: translateX(3px) translateY(3px);
+  transform: translateX(5px) translateY(3px);
 }
 
 /* .case-study {

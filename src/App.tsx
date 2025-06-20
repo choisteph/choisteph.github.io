@@ -5,13 +5,11 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Home from "./components/Home";
 import { type HTMLMotionProps, AnimatePresence } from "motion/react";
-import { type ReactNode } from "react";
 
 export type RouteTransitionProps = HTMLMotionProps<"div">;
 
 function App() {
   const location = useLocation();
-  console.log("location", location);
 
   const routeVariants: RouteTransitionProps = {
     initial: {

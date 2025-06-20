@@ -10,8 +10,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import FeaturedSkill from "./FeaturedSkill";
 import { faCertificate } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "motion/react";
+import { motion, type HTMLMotionProps } from "motion/react";
 import { type RouteTransitionProps } from "../App";
+
+export type SkillAnimationProps = HTMLMotionProps<"div">;
 
 export default function Home({
   initial,
@@ -48,6 +50,7 @@ export default function Home({
             key={idx}
             projectName={proj.projectName}
             projectDetails={proj.projectDetails}
+            projectSummary={proj.projectSummary}
             projectDeckLink={proj.projectDeckLink}
             projectCompetencies={proj.projectCompetencies}
             projectImg={proj.projectImg}

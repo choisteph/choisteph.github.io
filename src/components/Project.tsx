@@ -4,6 +4,7 @@ import "../styles/project.css";
 export type ProjectProps = {
   projectName: string;
   projectDetails: string;
+  projectSummary: string;
   projectDeckLink: string;
   projectCompetencies: string[];
   projectImg?: string;
