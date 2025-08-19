@@ -138,10 +138,10 @@ export default function About({
           <div className="slide-container">
             <Slide
               duration={4000}
-              autoplay={true}
+              autoplay={false}
               transitionDuration={800}
-              infinite={true}
-              arrows={false}
+              infinite={false}
+              arrows={true}
               easing="ease-in"
             >
               {slideImages.map((slideImg, idx) => (

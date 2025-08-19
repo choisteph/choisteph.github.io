@@ -49,10 +49,6 @@ body {
   min-width: 320px;
 }
 
-body {
-  transition: all ease-in 1s;
-}
-
 h1 {
   font-size: 3.5rem;
   line-height: 1.1;
@@ -126,4 +122,11 @@ h1 {
   #root {
     background-color: rgba(255, 255, 255, 0.5);
   }
+}
+
+/* turn on motion when there is an opt-in */
+@media (prefers-reduced-motion: no-preference) {
+  /* body {
+    transition: all ease-in 1s;
+  } */
 }
